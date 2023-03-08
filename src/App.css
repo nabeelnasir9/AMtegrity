@@ -62,3 +62,30 @@
 .signup {
   background-image: url(./images/signup.jpg);
 }
+img-comparison-slider {
+  outline: none;
+  --divider-width: 2px;
+  --divider-color: rgb(58, 194, 128);
+  --default-handle-opacity: 0;
+  --divider-height:80% !important
+}
+.divider {
+
+  height: 80% !important;
+ 
+}
+.rendered #shadow-root{
+  display: none !important;
+}
+.swiper-button-prev, .swiper-button-next {
+  /* position: absolute; */
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
