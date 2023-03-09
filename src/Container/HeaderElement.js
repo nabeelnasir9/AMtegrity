@@ -3,7 +3,7 @@ import React from 'react';
 
 function HeaderElement(props) {
     return (
-        <Grid><Link sx={{ textDecoration: 'none', color: '#4a4848', }}><Typography sx={{fontSize:'14px'}}>{props.txt}</Typography></Link></Grid>
+        <Grid><Link href='#todos' sx={{ textDecoration: 'none', color: '#4a4848', }}><Typography sx={{fontSize:'14px'}}>{props.txt}</Typography></Link></Grid>
     );
 }
 
