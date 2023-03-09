@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
+
+.GridScope{
+    width:98.7vw;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    padding-left: 10rem;
+    padding-top:4rem ;
+    
+}
+
+.GridContainer{
+        /* margin: 4% !important; */
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+}
+.Scope_Main{
+    display: flex;
+    flex-direction: row;
+    /* margin:10%; */
+   
+    width:100%;
+   
+}
+.ScopePart1{
+
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 55px;
+
+}
+
+.ScopeTexts{
+    display:flex;
+    flex-direction: column;
+    /* margin-right: 30px; */
+    margin-left: -30px;
+}
+
+.ScopeText1{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Raleway',sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+
+}
+.ScopeText2{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Raleway',sans-serif;
+    font-size: 38px;
+    color:#4267B2;
+    font-weight: 700;
+}
+.ScopeText3{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Raleway',sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+.ScopeText4{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Raleway',sans-serif;
+    font-size: 38px;
+    color:#4267B2;
+    font-weight: 700;
+}
+
+.ScopeCard{
+    padding-left: 60px;
+}
+
+.headerContent{
+    font-size: 20px !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700 !important;
+    color: #4267B2 !important;
+
+
+
+}
+
+.headerContent2{
+    font-size: 13px !important;
+    
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 600 !important;
+    color: black !important;
+}
+
+.CardContents{
+    padding-bottom: 14px !important;
+    
+}
+.CardContentss{
+    padding-bottom: 23px !important;
+   
+}
+.CardContentsss{
+    padding-bottom: 12px !important;
+    
+}
+
+.CardIcon{
+    font-size: 42px;
+    color:#4267B2;
+    padding-top: 44px;
+    padding-bottom: 10px;
+    padding-left: 11px;
+    padding-right: 2px;
+
+}
+.CardMainSection{
+    display: flex;
+    flex-direction: row;
+}

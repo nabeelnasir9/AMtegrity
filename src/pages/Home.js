@@ -6,6 +6,9 @@ import Examplecontainer from "../Container/Examplecontainer";
 import Feebtn from "../Container/Feebtn";
 import Footer from "../Container/Footer";
 import Header from "../Container/Header";
+import Scopes from "../Container/MPartialPart1";
+import MPartialPart2 from "../Container/MPartialPart2";
+import MPartialPart3 from "../Container/MPartialPart3";
 import PlanBoxContainer from "../Container/PlanBoxContainer";
 import Scope from "../Container/Scope";
 import ScopeWork from "../Container/ScopeWork";
@@ -14,8 +17,14 @@ import Slider from "../Container/Slider";
 
 function Home() {
   return (
-    <Grid container>
+    <Grid container   sx={{backgroundColor:'rgb(248, 248, 248)'}}>
+  
+  
       <Header/>
+      <Scopes/>
+      <MPartialPart2/>
+      <MPartialPart3/>
+
       <Scope/>
       <ScopeWork/>
       <Feebtn/>

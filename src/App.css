@@ -65,7 +65,7 @@
 img-comparison-slider {
   outline: none;
   --divider-width: 2px;
-  --divider-color: rgb(58, 194, 128);
+  --divider-color: #4267B2;
   --default-handle-opacity: 0;
   --divider-height:80% !important
 }

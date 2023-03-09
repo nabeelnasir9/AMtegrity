@@ -11,7 +11,7 @@ import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 function Slider(props) {
     const [currentSlide, setCurrentSlide] = useState(0);
     return (
-      <Grid container sx={{pl:'4rem',pr:'4rem',}}>
+      <Grid container sx={{pl:'4rem',pr:'4rem', pb:"6rem", pt:"2rem"}}>
 <Grid item xs={12} sx={{pl:'10rem',pr:'10rem',position:'relative'}} >
 <div class="swiper-button-prev"><AiOutlineLeft/></div>
 <div class="swiper-button-next"><AiOutlineRight/></div>
@@ -40,10 +40,10 @@ function Slider(props) {
             >
                 <SwiperSlide>
                     {/* gvbhnjmk */}
-                    <img src="http://mpartial.io/static/4bbdfb5b2a4a6b91f9fd5691124a59ad.png" width={'100%'}/>
+                    <img src="http://mpartial.io/static/4bbdfb5b2a4a6b91f9fd5691124a59ad.png" width={'100%'} height={'50%'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                   <img src="http://mpartial.io/static/12672af5557f53819c31c5faf4ce6a9e.png" width={'100%'} />
+                   <img src="http://mpartial.io/static/12672af5557f53819c31c5faf4ce6a9e.png" width={'100%'} height={'50%'} />
                 </SwiperSlide>
                 </Swiper>
 
@@ -60,7 +60,7 @@ function Slider(props) {
 export default Slider;
 
 const Paginations = ({ currentSlide, totalSlides, onClick }) => (
-    <Grid className="swiper__pagination__wrapper" sx={{textAlign:'center','& .swiper-pagination-bullet-active':{background:'#3ac280'}}}>
+    <Grid className="swiper__pagination__wrapper" sx={{textAlign:'center','& .swiper-pagination-bullet-active':{background:'#4267B2'}}}>
       {totalSlides?.map((item, index) => (
         <div key={index} className="swiperPagination__bullets"></div>
       ))}

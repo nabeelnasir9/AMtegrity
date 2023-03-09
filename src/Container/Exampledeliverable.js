@@ -5,13 +5,13 @@ function Exampledeliverable(props) {
     return (
        <Grid container sx={{pl:'4rem',pr:'4rem',justifyContent:'space-between'}}>
         <Grid item xs={12} sx={{mt:'3rem',mb:'3rem'}}>
-            <Typography sx={{fontWeight:'700',fontSize:'45px',textAlign:'center'}}>Example Deliverables</Typography>
+            <Typography sx={{fontWeight:'700',fontSize:'40px',textAlign:'center',color:"#4267B2"}}>Example Deliverables</Typography>
         </Grid>
-        <Grid item xs={12} sx={{mt:'3rem',mb:'3rem'}}>
-            <Typography sx={{fontWeight:'500',fontSize:'28px',textAlign:'center'}}>Pre-Mitigation Scan + Post-Mitigation Scan = Symbility PDF + mpartialSketch</Typography>
+        <Grid item xs={12} sx={{mt:'2rem',mb:'3rem'}}>
+            <Typography sx={{fontWeight:'500',fontSize:'24px',textAlign:'center'}}>Pre-Mitigation Scan + Post-Mitigation Scan = Matterport PDF + AMintSketch</Typography>
         </Grid>
 <Grid item xs={1}></Grid>
-        <Grid item xs={4.75}>
+        <Grid item xs={4.75} sx={{pb:"10rem"}}>
             <Grid>
             <iframe width="100%" height="480" src="https://my.matterport.com/show/?m=DhqzGgT7M1E" frameborder="0" loading="lazy" allowfullscreen="" allow="vr"></iframe>
 

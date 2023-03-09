@@ -1,24 +1,26 @@
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import ReactCompareImage from "react-compare-image";
+import '../Styles/Scopes.css';
 
 const Scope = () => {
   return (
-    <Grid container sx={{ mt: "", pl: "6rem", pr: "6rem" }}>
+    <Grid container sx={{ mt: "", pl: "6rem", pr: "6rem", pb:"7rem" }}>
       <Grid item xs={12} sx={{ textAlign: "center", mb: "5rem" }}>
-        <Typography sx={{ fontSize: "45px", fontWeight: "600" }}>
-          mpartialScope
+        <Typography sx={{ fontSize: "45px", fontWeight: "700", color:"#4267B2" }}>
+          AMintScope
         </Typography>
       </Grid>
       <Grid item sm={6}>
         <Typography
-          sx={{ fontSize: "45px", fontWeight: "600", pl: "6rem", pr: "1rem" }}
+          sx={{ fontSize: "40px", fontWeight: "600", pl: "2rem", pr: "5rem" }}
         >
-          GROUND-TRUTH DATA EVERYONE TRUSTS
+          GROUND-TRUTH DATA <span className='AMintScope___color'>EVERYONE TRUSTS</span>
         </Typography>
       </Grid>
       <Grid item sm={6}>
-        <Typography sx={{ pr: "2rem" }}>
+        <Typography sx={{ pr: "2rem" , textAlign:"justify", fontFamily:"Raleway"}}>
+          "
           We have combined the best-of-breed technology platforms with an eye
           towards relieving you of administrative burden. Geospatial Platforms
           3D scans augmented by TruePlan are used to generate consistent
@@ -27,16 +29,18 @@ const Scope = () => {
           with full transparency, unprecedented forensic photography, and
           infallible geospatial data that collectively result in rapid
           approvals.
+          "
         </Typography>
       </Grid>
-      <Grid item width={"100%"} xs={12} sx={{display:'flex',justifyContent:'center','& img-comparison-slider  .first':{
+      <Grid item width={"100%"} xs={12} sx={{pt:"5rem",display:'flex',justifyContent:'center','& img-comparison-slider  .first':{
         display:'none !important'
         }}}>
-        <img-comparison-slider className='reds' >
+        <img-comparison-slider className='reds'  >
           <img
             slot="first"
             src="http://mpartial.io/static/c27a817eb41739daaac543d5c27a7956.webp"
             width={"100%"}
+            
           />
           <img
             slot="second"
@@ -49,8 +53,8 @@ const Scope = () => {
         </img-comparison-slider>
      
       </Grid>
-      <Grid item  xs={12} sx={{textAlign:'center'}}>
-        <Button sx={{backgroundColor:'#3ac280',color:'white',fontFamily:'Raleways',fontSize:'14px',textTransform:'none',pl:'2rem',pr:'2rem',borderRadius:'1rem',textAlign:'center',':hover':{backgroundColor:'#3ac280',color:'black'}}}>Try Today</Button>
+      <Grid item  xs={12} sx={{textAlign:'center', pt:"3rem"}}>
+        <Button sx={{backgroundColor:'#4267B2',color:'white',fontFamily:'Raleways',fontSize:'14px',textTransform:'none',pl:'2rem',pr:'2rem',borderRadius:'1rem',textAlign:'center',':hover':{backgroundColor:'#3ac280',color:'white'}}}>Try Today</Button>
       </Grid>
     </Grid>
   );
