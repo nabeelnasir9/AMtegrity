@@ -14,6 +14,7 @@ import Scope from "../Container/Scope";
 import ScopeWork from "../Container/ScopeWork";
 import Sketchbox from "../Container/Sketchbox";
 import Slider from "../Container/Slider";
+import Sliderbar from "../Container/Sliderbar";
 
 function Home() {
   return (
@@ -24,7 +25,7 @@ function Home() {
       <Scopes/>
       <MPartialPart2/>
       <MPartialPart3/>
-
+<Sliderbar/>
       <Scope/>
       <ScopeWork/>
       <Feebtn/>
