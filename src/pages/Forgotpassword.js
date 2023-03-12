@@ -15,7 +15,7 @@ import React, {useState} from 'react';
 import {MdLock, MdVisibility, MdVisibilityOff} from 'react-icons/md';
 import {CgMail} from 'react-icons/cg';
 
-function SignIn(props) {
+function Forgotpassword(props) {
   const [showPassword, setShowPassword] = useState(true);
   return (
     <Grid
@@ -23,7 +23,7 @@ function SignIn(props) {
       sx={{width: '-webkit-fill-available', mt: '4rem', justifyContent: 'center',minHeight:'92vh',alignContent:'center'}}>
       <Grid item xs={12} sx={{mt:'-2rem',mb:'3rem'}}>
         <Typography sx={{textAlign: 'center', fontSize: '45px', fontWeight: '600'}}>
-          Sign In with your mpartial account.
+        Forgot Password?
         </Typography>
       </Grid>
       <Grid item xs={5}>
@@ -44,7 +44,7 @@ function SignIn(props) {
               fullWidth
               variant="outlined">
               <InputLabel sx={{pl: '2.5rem'}} htmlFor="outlined-adornment-password">
-                Email
+                Enter Your Email
               </InputLabel>
               <OutlinedInput sx={{pl: '2.5rem'}} type={'text'} label="Email" />
               {/* <MdVisibilityOff /> */}
@@ -64,70 +64,8 @@ function SignIn(props) {
               <MdLock style={{color: '#6d9e6d'}} />
             </Grid>
           </Grid>
-          <Grid item xs={12} sx={{position: 'relative'}}>
-            <FormControl
-              sx={{
-                '& .css-19dufz4-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, & .MuiOutlinedInput-notchedOutline':
-                  {borderColor: 'green !important', borderRadius: '10px'},
-                '& .Mui-focused': {color: 'green !important'},
-                m: 1,
-                '& .MuiOutlinedInput-notchedOutline legend ': {
-                  ml: '2rem',
-                  backgroundColor: 'red',
-                  color: 'red',
-                },
-              }}
-              fullWidth
-              variant="outlined">
-              <InputLabel sx={{pl: '2.5rem'}} htmlFor="outlined-adornment-password">
-                Password
-              </InputLabel>
-              <OutlinedInput
-                sx={{pl: '2.5rem'}}
-                id="outlined-adornment-password"
-                type={showPassword ? 'text' : 'password'}
-                endAdornment={
-                  <InputAdornment position="start">
-                    <IconButton
-                      aria-label="toggle password visibility"
-                      onClick={() => setShowPassword(prev => !prev)}
-                      //   onMouseDown={handleMouseDownPassword}
-                      edge="end">
-                      {showPassword ? <MdVisibilityOff /> : <MdVisibility />}
-                    </IconButton>
-                  </InputAdornment>
-                }
-                label="Password"
-              />
-              {/* <MdVisibilityOff /> */}
-            </FormControl>
-            <Grid
-              item
-              sx={{
-                padding: '.5rem',
-                backgroundColor: 'rgba(10,81,105,.2)',
-                borderRadius: '8px',
-                display: 'flex',
-                width: 'max-content',
-                position: 'absolute',
-                top: '20px',
-                left: '20px',
-              }}>
-              <MdLock style={{color: '#6d9e6d'}} />
-            </Grid>
-          </Grid>
-          <Grid item xs={12}>
-            <Link
-            href='/forgotpassword'
-              sx={{
-                textDecoration: 'none',
-                ':hover': {textDecoration: 'underline', color: 'green', cursor: 'pointer'},
-              }}>
-              <Typography sx={{fontSize: '14px', color: 'green', textAlign: 'right'}}>
-                Forgot Password?
-              </Typography>
-            </Link>
-          </Grid>
+       
+        
 
           <Grid item xs={12} sx={{textAlign: 'center'}}>
             <Button
@@ -143,7 +81,7 @@ function SignIn(props) {
                 textAlign: 'center',
                 ':hover': {backgroundColor: '#3ac280', color: 'white'},
               }}>
-              Sign In{' '}
+              Submit
             </Button>
           </Grid>
 
@@ -183,4 +121,4 @@ function SignIn(props) {
   );
 }
 
-export default SignIn;
+export default Forgotpassword;

@@ -39,7 +39,7 @@ function Home() {
       <Sketchbox/>
       </Grid>
       <ContactForm/>
-      <Footer/>
+      {/* <Footer/> */}
     </Grid>
   );
 }
