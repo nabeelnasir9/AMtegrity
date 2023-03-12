@@ -26,10 +26,26 @@ function Sliderbar(props) {
           fontWeight: 'normal',
           top: -6,
           backgroundColor: '#617db7',
-          paddingBottom:'2rem',
+          paddingBottom:'1rem',
           paddingTop:'1rem',
-          clipPath:"polygon(0.2% 0%, 53.3% 0%, 99.9% 0%, 99.9% 86.78%, 56.34% 87%, 50.62% 98.41%, 44.77% 86.99%, 0.2% 86.94%)",
+          marginTop:'-1rem',
+          borderRadius:'10px',
+
+          //clipPath:"polygon(0.2% 0%, 53.3% 0%, 99.9% 0%, 99.9% 86.78%, 56.34% 87%, 50.62% 98.41%, 44.77% 86.99%, 0.2% 86.94%)",
           color: theme.palette.text.primary,
+          
+       " & .MuiSlider-valueLabelCircle::after" :{
+          borderLeft: '8px solid rgba(0,0,0,0)',
+          borderRight:"8px solid rgba(0,0,0,0)",
+          borderTop: "8px solid #617db7",
+          left: '50%',
+          bottom: '-7.5px',
+          transform: 'translate3d(-50%, 0, 0)',
+          content: '" "',
+          position: 'absolute',
+          width: 0,
+          height: 0,
+      },
           '&:before': {
             display: 'none',
           },
@@ -61,7 +77,6 @@ function Sliderbar(props) {
     fontSize: '16px',
     justifyContent: 'center',
         },
-
         '& .MuiSlider-mark': {
           backgroundColor: '#bfbfbf',
           height: 0,

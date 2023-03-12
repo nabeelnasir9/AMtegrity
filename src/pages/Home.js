@@ -2,6 +2,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import ContactForm from "../Container/ContactForm";
+import ConverterBar from "../Container/ConverterBar";
 import Examplecontainer from "../Container/Examplecontainer";
 import Feebtn from "../Container/Feebtn";
 import Footer from "../Container/Footer";
@@ -15,16 +16,18 @@ import ScopeWork from "../Container/ScopeWork";
 import Sketchbox from "../Container/Sketchbox";
 import Slider from "../Container/Slider";
 import Sliderbar from "../Container/Sliderbar";
+import SignIn from "./SignIn";
 
 function Home() {
   return (
     <Grid container   sx={{backgroundColor:'rgb(248, 248, 248)'}}>
   
   
-      <Header/>
+      {/* <Header/> */}
       <Scopes/>
       <MPartialPart2/>
       <MPartialPart3/>
+      <ConverterBar/>
 <Sliderbar/>
       <Scope/>
       <ScopeWork/>
