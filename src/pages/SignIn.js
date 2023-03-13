@@ -131,7 +131,6 @@ function SignIn(props) {
 
           <Grid item xs={12} sx={{textAlign: 'center'}}>
             <Button
-              href="/Signin"
               sx={{
                 backgroundColor: '#3ac280',
                 color: 'white',
@@ -157,7 +156,7 @@ function SignIn(props) {
           </Grid>
           <Grid item xs={12} sx={{textAlign: 'center',mt:'2rem'}}>
             <Button
-              href="/Signin"
+              href="/signup"
               sx={{
                 backgroundColor: 'transparent',
                 color: '#3ac280',
