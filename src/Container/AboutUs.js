@@ -36,14 +36,30 @@ function AboutUs() {
             </div>
             {data.map((item, index) => (
             <div className='AboutUs__TextandImageContainer'>
-            
-                <div className='AboutUs__Text' key={index} style={{color:'#4267B2'}}>
+                {index % 2 === 0 ? (
+            <>
+               <div className='AboutUs__Text' style={{color:'#4267B2', paddingRight:'6rem'}}>
                     {item.text1}
                 </div>
                 <div className='AboutUs__Image'>
                    <img src= {item.image} alt='' />
                 </div>
-           
+          
+            </>
+          ) : (
+            <>
+               
+                <div className='AboutUs__Image'>
+                   <img src= {item.image} alt='' style={{ justifyContent:'space-between'}}/>
+                </div>
+                <div className='AboutUs__Text' style={{color:'#4267B2', paddingLeft:'6rem'}}>
+                    {item.text1}
+                </div>
+          
+            </>
+          )}
+            
+               
             </div>
              ))}
         </div>

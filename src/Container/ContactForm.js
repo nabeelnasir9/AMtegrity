@@ -3,7 +3,7 @@ import React from 'react';
 
 function ContactForm(props) {
   return (
-    <Grid container sx={{pl: '4rem', pr: '4rem', pb: '6rem', justifyContent: 'space-between'}}>
+    <Grid container id='contactus' sx={{pl: '4rem', pr: '4rem', pb: '6rem', justifyContent: 'space-between'}}>
       <Grid item xs={12} sx={{mt: '3rem', mb: '3rem'}}>
         <Typography
           sx={{

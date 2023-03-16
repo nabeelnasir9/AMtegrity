@@ -6,7 +6,7 @@ import {MdPictureAsPdf} from 'react-icons/md';
 
 function MPartialPart2() {
   return (
-    <div className='Mpartialbed__wrapper'>
+    <div id='mpartialMbed' className='Mpartialbed__wrapper'>
         <div className='Mpartialbed__container'>
         <div className='Mpartialbed__left'>
             <div className='Mpartialbed__text_1'>

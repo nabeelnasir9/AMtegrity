@@ -89,3 +89,4 @@ img-comparison-slider {
 .swiper-button-next {
   right: 10px;
 }
+html{scroll-behavior: smooth;}

@@ -10,7 +10,7 @@ const onChange = (value) => {
 
 function MPartialPart3() {
   return (
-    <div className="MPartialPart3__wrapper">
+    <div id='AMintConvert' className="MPartialPart3__wrapper">
       <div className="MPartialPart3__container">
         <div className="MPartialPart3__Header">
           AMintConvert Fee Structure

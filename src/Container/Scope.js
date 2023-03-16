@@ -6,7 +6,7 @@ import '../Styles/Scopes.css';
 
 const Scope = () => {
   return (
-    <Grid container sx={{mt: '', pl: '6rem', pr: '6rem', pb: '7rem'}}>
+    <Grid id='AMintScope' container sx={{mt: '2rem', pl: '6rem', pr: '6rem', pb: '7rem',scrollPaddingTop: '200px'}}>
       <Grid item xs={12} sx={{textAlign: 'center', mb: '5rem'}}>
         <Typography sx={{fontSize: '45px', fontWeight: '700', color: '#4267B2'}}>
           AMintScope

@@ -1,0 +1,110 @@
+.Header__btn {
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    padding: 14px 8px;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+  }
+  
+  .Header__btn::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #4267B2;
+    transition: .7s ease-in-out;
+  }
+  
+  .Header__btn:hover {
+    color: white;
+    font-weight: 600;
+    transition-delay: .5s;
+  }
+  
+  .Header__btn:hover::before {
+    width: 78%;
+  }
+  
+  .Header__btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #4267B2;
+    transition: .4s ease;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  
+  .Header__btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+
+  .Btn__Head{
+
+  }
+
+  .Btn__Head {
+    --color: #3ac280;
+    --color2: rgb(10, 25, 30);
+    padding: 10px 10px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'raleway',  sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .Btn__Head::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .Btn__Head::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .Btn__Head:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .Btn__Head:hover::after {
+    transform: skew(180deg) translate(-50%, -50%);
+   }
+   
+   .Btn__Head:hover {
+    color: var(--color2);
+   }
+   
+   .Btn__Head:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
