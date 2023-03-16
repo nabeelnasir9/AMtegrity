@@ -5,6 +5,8 @@ import {
   Routes,
   Route,
   Link,
+  useLocation,
+  
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -21,7 +23,10 @@ const theme=createTheme({
   fontFamily:  'Raleway'
   }
 })
+
 function App() {
+  // console.log(location);
+
   return (
 
 
@@ -42,8 +47,9 @@ function App() {
       <Route path='/aboutus' element={<AboutUs/>} />
     
       </Routes>
-      </Router>
       <Footer/>
+      </Router>
+      
       </Grid>
       </ThemeProvider>
     {/* <ThemeProvider theme={theme}>

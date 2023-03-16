@@ -6,11 +6,15 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { ImLinkedin } from 'react-icons/im';
 
 import { FiFacebook } from 'react-icons/fi';
+import { useLocation } from 'react-router';
 
 
 function Footer(props) {
-    return (
-        <Grid container sx={{ backgroundColor: '#305eba', padding: '20px 0' }}>
+  const location = useLocation();
+  console.log(location.pathname=='/Signin',location.pathname)
+
+    return (<>
+       { (location.pathname!='/forgotpassword' && location.pathname!='/signup') && <Grid container sx={{ backgroundColor: '#305eba', padding: '20px 0' }}>
             <Grid item xs={12} sx={{pl:'4rem',pr:'4rem'}}>
                 <Grid container sx={{ backgroundColor: '#305eba', padding: '20px 0' }}>
                     <Grid item xs={3} sx={{fontSize:"30px", color:"white", fontFamily:"Raleway", fontWeight:"700"}}>
@@ -42,7 +46,7 @@ function Footer(props) {
                     </Grid>
                 </Grid>
             </Grid>
-        </Grid>
+        </Grid>}</>
     );
 }
 
