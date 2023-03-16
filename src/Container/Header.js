@@ -9,8 +9,8 @@ function Header(props) {
 
           <Link href='/' sx={{textDecoration:'none'}}>AMintegrity</Link> 
         </Grid>
-        <Grid item xs={2.5}></Grid>
-        <Grid item xs={7.5} sx={{display:'flex',alignItems:"center",gap:'7px',cursor:'pointer',justifyContent:'center', color:'#4267B2',pr:"1rem"}}>
+        <Grid item xs={2}></Grid>
+        <Grid item xs={8} sx={{display:'flex',alignItems:"center",gap:'7px',cursor:'pointer',justifyContent:'center', color:'#4267B2',pr:"1rem"}}>
             {datalist.map((s,n)=><HeaderElement sx={{color:'#4267B2' }} key={n} txt={s}/> )}
             <Button href='/Signin' sx={{backgroundColor:'#4267B2',color:'white',fontFamily:'Raleways',fontSize:'13px',pl:'1.35rem',pr:'1.35rem',textTransform:'none',borderRadius:'1rem',textAlign:'center',':hover':{backgroundColor:'#3ac280',color:'white' }}}>Sign In </Button>
         </Grid>
