@@ -27,7 +27,7 @@
   }
   
   .Header__btn:hover::before {
-    width: 78%;
+    width: 70%;
   }
   
   .Header__btn::after {
