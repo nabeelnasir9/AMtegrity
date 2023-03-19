@@ -1,9 +1,9 @@
 import { Grid, Link, Typography } from '@mui/material';
 import React from 'react';
-
+import '../Styles/Header.css';
 function HeaderElement(props) {
     return (
-        <Grid><Link href='#todos' sx={{ textDecoration: 'none', color: '#4a4848', }}><Typography sx={{fontSize:'14px'}}>{props.txt}</Typography></Link></Grid>
+        <Grid><Link href={props.txt.link} sx={{ textDecoration: 'none', color: '#4a4848', }}><Typography className='Header__btn'  sx={{fontSize:'12.5px',fontWeight:'600'}}>{props.txt.name}</Typography></Link></Grid>
     );
 }
 

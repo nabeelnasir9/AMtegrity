@@ -45,7 +45,7 @@ margin-bottom: 55px;
     display: flex;
     justify-content: flex-start;
     font-family: 'Raleway',sans-serif;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 700;
 
 }
@@ -53,7 +53,7 @@ margin-bottom: 55px;
     display: flex;
     justify-content: flex-start;
     font-family: 'Raleway',sans-serif;
-    font-size: 38px;
+    font-size: 30px;
     color:#4267B2;
     font-weight: 700;
 }
@@ -61,20 +61,20 @@ margin-bottom: 55px;
     display: flex;
     justify-content: flex-start;
     font-family: 'Raleway',sans-serif;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 700;
 }
 .ScopeText4{
     display: flex;
     justify-content: flex-start;
     font-family: 'Raleway',sans-serif;
-    font-size: 38px;
+    font-size: 30px;
     color:#4267B2;
     font-weight: 700;
 }
 
 .ScopeCard{
-    padding-left: 60px;
+    padding-left: 35px;
 }
 
 .headerContent{

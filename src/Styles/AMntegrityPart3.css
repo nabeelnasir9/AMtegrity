@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Montserrat:wght@300&family=Prompt:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Montserrat:wght@300&family=Poppins:wght@300&family=Prompt:ital,wght@1,700&family=Roboto:wght@300;400&display=swap');
 
-.MPartialPart3__wrapper{
+.AMntegrityPart3__wrapper{
     padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-bottom: 1rem;
     background-color: rgb(248, 248, 248);
 }
 
-.MPartialPart3__container{
+.AMntegrityPart3__container{
 
     text-align: center;
 }
 
-.MPartialPart3__Header{
+.AMntegrityPart3__Header{
     font-size: 40px;
     font-weight: 700;
     color:#4267B2;
 }
 
-.MPartialPart3__Xcatimate{
+.AMntegrityPart3__Xcatimate{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -27,7 +27,7 @@
     padding-top: 3rem;
 }
 
-.MPartialPart3__Text_1{
+.AMntegrityPart3__Text_1{
 
     padding-top: 2.8rem;
 font-family: 'Prompt', sans-serif !important;
@@ -36,7 +36,7 @@ font-size: 28px;
 
 }
 
-.MPartialPart3__Text_3{
+.AMntegrityPart3__Text_3{
     padding-top: 2.8rem;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600;
@@ -44,7 +44,7 @@ font-size: 28px;
     color:rgb(138, 138, 138) !important;
 }
 
-.MPartialPart3__Text_4{
+.AMntegrityPart3__Text_4{
 
     font-size: 15px;
     font-family: 'Raleway', sans-serif;

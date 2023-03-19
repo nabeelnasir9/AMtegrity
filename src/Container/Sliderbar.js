@@ -26,10 +26,26 @@ function Sliderbar(props) {
           fontWeight: 'normal',
           top: -6,
           backgroundColor: '#617db7',
-          paddingBottom:'2rem',
+          paddingBottom:'1rem',
           paddingTop:'1rem',
-          clipPath:"polygon(0.2% 0%, 53.3% 0%, 99.9% 0%, 99.9% 86.78%, 56.34% 87%, 50.62% 98.41%, 44.77% 86.99%, 0.2% 86.94%)",
+          marginTop:'-1rem',
+          borderRadius:'10px',
+
+          //clipPath:"polygon(0.2% 0%, 53.3% 0%, 99.9% 0%, 99.9% 86.78%, 56.34% 87%, 50.62% 98.41%, 44.77% 86.99%, 0.2% 86.94%)",
           color: theme.palette.text.primary,
+          
+       " & .MuiSlider-valueLabelCircle::after" :{
+          borderLeft: '8px solid rgba(0,0,0,0)',
+          borderRight:"8px solid rgba(0,0,0,0)",
+          borderTop: "8px solid #617db7",
+          left: '50%',
+          bottom: '-7.5px',
+          transform: 'translate3d(-50%, 0, 0)',
+          content: '" "',
+          position: 'absolute',
+          width: 0,
+          height: 0,
+      },
           '&:before': {
             display: 'none',
           },
@@ -61,7 +77,6 @@ function Sliderbar(props) {
     fontSize: '16px',
     justifyContent: 'center',
         },
-
         '& .MuiSlider-mark': {
           backgroundColor: '#bfbfbf',
           height: 0,
@@ -75,29 +90,34 @@ function Sliderbar(props) {
     const marks = [
         {
           value: 0,
-          label: '0$',
+          label: '$0',
         },
         {
           value: 20,
-          label: '20$',
+          label: '$20,000',
         },
         {
-          value: 37,
-          label: '37$',
+          value: 50,
+          label: '$50,000',
         },
+        {
+          value: 75,
+          label: '$75,000',
+        },
+        
         {
           value: 100,
-          label: '100$',
-        },
+          label:'$100,000'
+        }
       ];
       function valuetext(value) {
-        return <Typography sx={{textAlign:'center',color:'White !important',fontWeight:'500'}}>${value}<br/><Typography sx={{fontWeight:'400',color:'white !important'}}>Estimate Grand Total</Typography></Typography>;
+        return <Typography sx={{textAlign:'center',color:'White !important',fontWeight:'500'}}>${value}K<br/><Typography sx={{fontWeight:'400',color:'white !important'}}>Estimate Grand Total</Typography></Typography>;
       }     
       const iOSBoxShadow =
   '0 3px 1px rgba(0,0,0,0.1),0 4px 8px rgba(0,0,0,0.13),0 0 0 1px rgba(0,0,0,0.02)';
  
     return (
-    <Grid container sx={{pl:'4rem',pr:'4rem'}}>
+    <Grid container sx={{pl:'4rem',pr:'4rem', pb:'4rem'}}>
         <Grid item xs={12}>
         <IOSSlider
         aria-label="ios slider"
