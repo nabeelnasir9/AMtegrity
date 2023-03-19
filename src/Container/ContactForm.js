@@ -25,14 +25,14 @@ function ContactForm(props) {
             sx: {
             
               '&.Mui-focused': {
-                color: 'green',
+                color: '#4267B2',
               },
             },
           }}
           sx={{
             mb: '1rem',
             '& .css-19dufz4-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, & .MuiOutlinedInput-notchedOutline':
-              {borderColor: 'green !important', borderRadius: '10px'},
+              {borderColor: '#4267B2 !important', borderRadius: '10px'},
             // '& legend ': {width: '160px'},
           }}
           label="Name"
@@ -44,14 +44,14 @@ function ContactForm(props) {
             sx: {
             
               '&.Mui-focused': {
-                color: 'green',
+                color: '#4267B2',
               },
             },
           }}
           sx={{
             mb: '1rem',
             '& .css-19dufz4-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, & .MuiOutlinedInput-notchedOutline':
-              {borderColor: 'green !important', borderRadius: '10px'},
+              {borderColor: '#4267B2 !important', borderRadius: '10px'},
             // '& legend ': {width: '160px'},
           }}
           label="Email"
@@ -63,14 +63,14 @@ function ContactForm(props) {
             sx: {
             
               '&.Mui-focused': {
-                color: 'green',
+                color: '#4267B2',
               },
             },
           }}
           sx={{
             mb: '1rem',
             '& .css-19dufz4-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, & .MuiOutlinedInput-notchedOutline':
-              {borderColor: 'green !important', borderRadius: '10px'},
+              {borderColor: '#4267B2 !important', borderRadius: '10px'},
             '& legend ': {width: '90px'},
           }}
           label="Phone Number"
@@ -84,7 +84,7 @@ function ContactForm(props) {
             sx: {
             
               '&.Mui-focused': {
-                color: 'green',
+                color: '#4267B2',
               },
             },
           }}
@@ -92,7 +92,7 @@ function ContactForm(props) {
           sx={{
            
             '& .css-19dufz4-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, & .MuiOutlinedInput-notchedOutline':
-            {borderColor: 'green !important', borderRadius: '10px'},
+            {borderColor: '#4267B2 !important', borderRadius: '10px'},
             width: '100%',
             borderRadius: '10px',
           }}

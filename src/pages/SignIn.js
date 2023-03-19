@@ -23,7 +23,7 @@ function SignIn(props) {
       sx={{width: '-webkit-fill-available', mt: '4rem', justifyContent: 'center',minHeight:'92vh',alignContent:'center'}}>
       <Grid item xs={12} sx={{mt:'-2rem',mb:'3rem'}}>
         <Typography sx={{textAlign: 'center', fontSize: '45px', fontWeight: '600'}}>
-          Sign In with your mpartial account.
+          Sign In with your AMntegrity account.
         </Typography>
       </Grid>
       <Grid item xs={5}>
@@ -32,8 +32,8 @@ function SignIn(props) {
             <FormControl
               sx={{
                 '& .css-19dufz4-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, & .MuiOutlinedInput-notchedOutline':
-                  {borderColor: 'green !important', borderRadius: '10px'},
-                '& .Mui-focused': {color: 'green !important'},
+                  {borderColor: '#4267B2 !important', borderRadius: '10px'},
+                '& .Mui-focused': {color: '#4267B2 !important'},
                 m: 1,
                 '& .MuiOutlinedInput-notchedOutline legend ': {
                   ml: '2rem',
@@ -61,15 +61,15 @@ function SignIn(props) {
                 top: '20px',
                 left: '20px',
               }}>
-              <MdLock style={{color: '#6d9e6d'}} />
+              <MdLock style={{color: '#4267B2'}} />
             </Grid>
           </Grid>
           <Grid item xs={12} sx={{position: 'relative'}}>
             <FormControl
               sx={{
                 '& .css-19dufz4-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, & .MuiOutlinedInput-notchedOutline':
-                  {borderColor: 'green !important', borderRadius: '10px'},
-                '& .Mui-focused': {color: 'green !important'},
+                  {borderColor: '#4267B2 !important', borderRadius: '10px'},
+                '& .Mui-focused': {color: '#4267B2 !important'},
                 m: 1,
                 '& .MuiOutlinedInput-notchedOutline legend ': {
                   ml: '2rem',
@@ -113,7 +113,7 @@ function SignIn(props) {
                 top: '20px',
                 left: '20px',
               }}>
-              <MdLock style={{color: '#6d9e6d'}} />
+              <MdLock style={{color: '#4267B2'}} />
             </Grid>
           </Grid>
           <Grid item xs={12}>
@@ -123,7 +123,7 @@ function SignIn(props) {
                 textDecoration: 'none',
                 ':hover': {textDecoration: 'underline', color: 'green', cursor: 'pointer'},
               }}>
-              <Typography sx={{fontSize: '14px', color: 'green', textAlign: 'right'}}>
+              <Typography sx={{fontSize: '14px', color: '#4267B2', textAlign: 'right'}}>
                 Forgot Password?
               </Typography>
             </Link>
@@ -132,15 +132,15 @@ function SignIn(props) {
           <Grid item xs={12} sx={{textAlign: 'center'}}>
             <Button
               sx={{
-                backgroundColor: '#3ac280',
+                backgroundColor: '#4267B2',
                 color: 'white',
-                fontFamily: 'Raleways',
+                fontFamily: 'Raleway',
                 fontSize: '13px',
                 pl: '1.35rem',
                 pr: '1.35rem',
                 borderRadius: '1rem',
                 textAlign: 'center',
-                ':hover': {backgroundColor: '#3ac280', color: 'white'},
+                ':hover': {backgroundColor: 'white', color: '#4267B2', border:'2px solid #4267B2', borderRadius: '1rem'},
               }}>
               Sign In{' '}
             </Button>
@@ -149,7 +149,7 @@ function SignIn(props) {
           <Grid item xs={12}  sx={{mt:'1rem'}}>
             <Grid container sx={{alignItems:"center"}}>
 <Grid item xs={4} sx={{height:'1px',background:'#00000080'}}></Grid>
-<Grid item xs={4} sx={{background:'white'}}><Typography sx={{fontSize:'14px',color:'#00000080',textAlign:'center'}}>New to mpartial?</Typography></Grid>
+<Grid item xs={4} sx={{background:'white'}}><Typography sx={{fontSize:'14px',color:'#4267B2',textAlign:'center'}}>New to AMntegrity?</Typography></Grid>
 <Grid item xs={4} sx={{height:'1px',background:'#00000080'}}></Grid>
 
             </Grid>
@@ -159,18 +159,18 @@ function SignIn(props) {
               href="/signup"
               sx={{
                 backgroundColor: 'transparent',
-                color: '#3ac280',
-                fontFamily: 'Raleways',
+                color: '#4267B2',
+                fontFamily: 'Raleway',
                 fontSize: '18px',
                 pl: '.5rem',
                 pr: '.5rem',
                 fontWeight:'400',
-                border:'1px solid #3ac280',
+                border:'1px solid #4267B2',
                 borderRadius: '25px',
                 pt:'.5rem',pb:'.5rem',
                 textAlign: 'center',
                 minWidth:'44%',
-                ':hover': {backgroundColor: 'transparent', color: '#3ac280'},
+                ':hover': {backgroundColor: '#4267B2', color: 'white'},
               }}>
             Create Account{' '}
             </Button>

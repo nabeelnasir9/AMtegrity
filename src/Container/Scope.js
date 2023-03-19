@@ -3,28 +3,29 @@ import React from 'react';
 import ReactCompareImage from 'react-compare-image';
 import {FiArrowLeft, FiArrowRight} from 'react-icons/fi';
 import '../Styles/Scopes.css';
+import {Link} from 'react-router-dom';
+import Post from '../images/PostMitigation.jpg';
+import Pre from '../images/Premitigation.jpg';
+// import { useHistory } from 'react-router-dom';
+
 
 const Scope = () => {
+  
   return (
-    <Grid id='AMintScope' container sx={{mt: '2rem', pl: '6rem', pr: '6rem', pb: '7rem',scrollPaddingTop: '200px'}}>
+    <Grid id='AMEstimate' container sx={{mt: '2rem', pl: '6rem', pr: '6rem', pb: '7rem',scrollPaddingTop: '200px'}}>
       <Grid item xs={12} sx={{textAlign: 'center', mb: '5rem'}}>
         <Typography sx={{fontSize: '45px', fontWeight: '700', color: '#4267B2'}}>
-          AMintScope
+          AMEstimate
         </Typography>
       </Grid>
       <Grid item sm={6}>
         <Typography sx={{fontSize: '40px', fontWeight: '600', pl: '2rem', pr: '5rem'}}>
-          GROUND-TRUTH DATA <span className="AMintScope___color">EVERYONE TRUSTS</span>
+          GROUND-TRUTH DATA <span className="AMEstimate___color">EVERYONE TRUSTS</span>
         </Typography>
       </Grid>
       <Grid item sm={6}>
         <Typography sx={{pr: '2rem', textAlign: 'justify', fontFamily: 'Raleway'}}>
-          " We have combined the best-of-breed technology platforms with an eye towards
-          relieving you of administrative burden. Geospatial Platforms 3D scans augmented by
-          TruePlan are used to generate consistent Xactimate or Symbility sheets that are
-          delivered in accord with Actionable Insights compliance rule sets. Each mpartial is
-          produced with full transparency, unprecedented forensic photography, and infallible
-          geospatial data that collectively result in rapid approvals. "
+          " Xactimate Estimation Services provide accurate and reliable cost estimating solutions for contractors, adjusters, and estimators. Our team of experts uses the latest Xactimate software and technology to create detailed estimates that meet your specific project needs. We offer a wide range of services, from cost estimating and sketching to project management and consulting, to help you streamline your workflow and increase profitability. With our fast turnaround times and competitive pricing, you can trust that your estimates will be delivered on time and within budget. Let us help you take your business to the next level with Xactimate Estimation Services. "
         </Typography>
       </Grid>
       <Grid
@@ -42,12 +43,14 @@ const Scope = () => {
         <img-comparison-slider className="reds">
           <img
             slot="first"
-            src="http://mpartial.io/static/c27a817eb41739daaac543d5c27a7956.webp"
+            // src="http://AMntegrity.io/static/c27a817eb41739daaac543d5c27a7956.webp"
+            src={Pre}
             width={'100%'}
           />
           <img
             slot="second"
-            src="http://mpartial.io/static/5c127b76ce5c14278b5f7708f6ad440a.webp"
+            // src="http://AMntegrity.io/static/5c127b76ce5c14278b5f7708f6ad440a.webp"
+            src={Post}
             width={'100%'}
           />
 
@@ -77,21 +80,26 @@ const Scope = () => {
         </img-comparison-slider>
       </Grid>
       <Grid item xs={12} sx={{textAlign: 'center', pt: '3rem'}}>
+       <Link to="/SignIn" style={{textDecoration:'none'}}>
         <Button
+        
           sx={{
             backgroundColor: '#4267B2',
             color: 'white',
-            fontFamily: 'Raleways',
+            fontFamily: 'Raleway',
             fontSize: '14px',
             textTransform: 'none',
             pl: '2rem',
-            pr: '2rem',
+            pr: '2rem', 
             borderRadius: '1rem',
             textAlign: 'center',
-            ':hover': {backgroundColor: '#3ac280', color: 'white'},
+            textDecoration:'none',
+            ':hover': {backgroundColor: '#3ac280', color: 'white', textDecoration: 'none'},
           }}>
-          Try Today
+      Sign In Now
         </Button>
+        </Link>
+        
       </Grid>
     </Grid>
   );

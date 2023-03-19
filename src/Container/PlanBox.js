@@ -1,6 +1,7 @@
 import { Button, Grid, Typography } from '@mui/material';
 import React from 'react';
 import { AiOutlineCheckCircle } from 'react-icons/ai';
+import {Link} from 'react-router-dom';
 
 function PlanBox(props) {
     return (
@@ -14,7 +15,7 @@ function PlanBox(props) {
                     <Grid>
                         { props.list.map((s,n)=>(
                         <Grid key={n} sx={{ display: 'flex',width:'65%',margin:'auto' , alignItems: 'center', gap: '10px' }}>
-                            <AiOutlineCheckCircle style={{ color: '#41c484' }} />
+                            <AiOutlineCheckCircle style={{ color: '#4267B2' }} />
                             <Typography sx={{ textAlign: 'center', color: '#0a5169',fontSize:'14px' }}>
                                 {s}</Typography>
                         </Grid>))
@@ -29,7 +30,9 @@ function PlanBox(props) {
                 </Grid>}
 {
          !props.free &&       <Grid sx={{textAlign:'center'}}>
-        <Button sx={{backgroundColor:'#3ac280',color:'white',mt:'-4rem',fontFamily:'Raleways',fontSize:'14px',textTransform:'none',pl:'2rem',pr:'2rem',borderRadius:'1rem',textAlign:'center',':hover':{backgroundColor:'#3ac280',color:'black'}}}>Contact us</Button>
+            <Link to="/SignIn" style={{textDecoration:'none'}}>
+        <Button sx={{backgroundColor:'#4267B2',color:'white',mt:'-4rem',fontFamily:'Raleway',fontSize:'14px',textTransform:'none',pl:'2rem',pr:'2rem',borderRadius:'1rem',textAlign:'center',':hover':{backgroundColor:'white',color:'#4267B2', border: '2px solid #4267B2',}}}>Sign In</Button>
+        </Link>
       </Grid>}
             </Grid>
 

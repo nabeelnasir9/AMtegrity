@@ -5,7 +5,7 @@ function Sketchbox(props) {
     return (
        <Grid container sx={{pl:'4rem',pr:'4rem',justifyContent:'space-between'}}>
         <Grid item xs={12} sx={{mt:'3rem',mb:'3rem'}}>
-            <Typography sx={{fontWeight:'600',fontSize:'32px',textAlign:'center',color:"#4267B2", pb:"4rem"}}>AMintSketch for Matterport</Typography>
+            <Typography sx={{fontWeight:'600',fontSize:'32px',textAlign:'center',color:"#4267B2", pb:"4rem"}}>AMSketch for Matterport</Typography>
         </Grid>
 
         <Grid item xs={3.8} sx={{padding:'1rem',backgroundColor:'white',borderRadius:'8px'}}>

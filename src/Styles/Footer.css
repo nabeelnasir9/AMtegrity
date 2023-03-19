@@ -1,0 +1,21 @@
+.Footer__Elements__1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.Footer__icons__1{
+    color:white !important;
+    font-weight: 800 !important;
+    display: flex;
+    align-items: center;
+}
+
+.Footer__Text__1{
+    font-size: 12px;
+    padding-left: 1rem;
+    color: White;
+    font-weight: 500 !important;
+    font-family: 'Raleway', sans-serif;
+}

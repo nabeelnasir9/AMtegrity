@@ -11,6 +11,8 @@ import {
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 
+
+
 import { createTheme, Grid, ThemeProvider } from "@mui/material";
 import SignIn from "./pages/SignIn";
 import Header from "./Container/Header";
@@ -18,6 +20,10 @@ import AboutUs from "./Container/AboutUs";
 import Footer from "./Container/Footer";
 import Forgotpassword from "./pages/Forgotpassword";
 import Signup from "./pages/Signup";
+import Services from "./Container/Services";
+// import {Audio} from 'react-loading-spinner';
+// import LoadingSpinner from 'react-loading-spinner';
+
 const theme=createTheme({
   typography:{
   fontFamily:  'Raleway'
@@ -25,12 +31,21 @@ const theme=createTheme({
 })
 
 function App() {
+  
   // console.log(location);
 
   return (
-
-
+   
     <>
+      {/* <Audio
+  height="80"
+  width="80"
+  radius="9"
+  color="green"
+  ariaLabel="loading"
+  wrapperStyle
+  wrapperClass
+/> */}
     <ThemeProvider theme={theme}>
     <Grid container>
       <Header/>
@@ -45,6 +60,7 @@ function App() {
 
 
       <Route path='/aboutus' element={<AboutUs/>} />
+      <Route path='/Services' element={<Services/>} />
     
       </Routes>
       <Footer/>
@@ -52,13 +68,9 @@ function App() {
       
       </Grid>
       </ThemeProvider>
-    {/* <ThemeProvider theme={theme}>
-    <Grid container>
-    <Home/>
-    </Grid> */}
- 
-    {/* </ThemeProvider> */}
+   
     
+  
     </>
   );
 }

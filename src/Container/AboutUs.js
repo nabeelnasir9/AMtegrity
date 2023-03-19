@@ -9,30 +9,30 @@ function AboutUs() {
     <div className='AboutUs__childWrapper'>
         <div className='AboutUS__MainContainer'>
             <div className='AboutUS__Header'>
-                About AMintegrity
+                About AMntegrity
             </div>
             <div className='About__MainPara'>
-            AMintegrity is purpose-built for the property insurance ecosystem. AMintegrity exists to extract maximum value from the tectonic shift towards leveraging geospatial data in both risk engineering, and machine-assisted claim settlement.
+            AMntegrity is purpose-built for the property insurance ecosystem. AMntegrity exists to extract maximum value from the tectonic shift towards leveraging geospatial data in both risk engineering, and machine-assisted claim settlement.
 
             </div>
             <div className='AboutUs__Mainpara_1'>
-            AMintegrity believes that both Claims Professionals & Contractors deserve to have access to a platform designed to enhance communication, and address the unique demands of our industry.
+            AMntegrity believes that both Claims Professionals & Contractors deserve to have access to a platform designed to enhance communication, and address the unique demands of our industry.
             </div>
             <div className='AboutUs__Mainpara_2'>
-            AMintegrity currently incorporates three main offerings:
+            AMntegrity currently incorporates three main offerings:
             </div>
             <div className='AboutUS__Mainpara_points'>
                 <ul>
-                    <li>AMintBed</li>
-                    <li>AMintConvert</li>
-                    <li>AMintScope</li>
+                    <li>AMSketch</li>
+                    <li>AMXactimate</li>
+                    <li>AMEstimate</li>
                 </ul>
             </div>
             <div className='AboutUS__Header'>
-                AMintBed
+                AMSketch
             </div>
             <div className='AboutUS__Paragraph__1'>
-            The AMintBed provides space for Matterport users to supercharge any public scan, providing access to unique utilities. For example:
+            The AMSketch provides space for Matterport users to supercharge any public scan, providing access to unique utilities. For example:
             </div>
             {data.map((item, index) => (
             <div className='AboutUs__TextandImageContainer'>

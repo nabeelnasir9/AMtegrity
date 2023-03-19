@@ -90,29 +90,34 @@ function Sliderbar(props) {
     const marks = [
         {
           value: 0,
-          label: '0$',
+          label: '$0',
         },
         {
           value: 20,
-          label: '20$',
+          label: '$20,000',
         },
         {
-          value: 37,
-          label: '37$',
+          value: 50,
+          label: '$50,000',
         },
+        {
+          value: 75,
+          label: '$75,000',
+        },
+        
         {
           value: 100,
-          label: '100$',
-        },
+          label:'$100,000'
+        }
       ];
       function valuetext(value) {
-        return <Typography sx={{textAlign:'center',color:'White !important',fontWeight:'500'}}>${value}<br/><Typography sx={{fontWeight:'400',color:'white !important'}}>Estimate Grand Total</Typography></Typography>;
+        return <Typography sx={{textAlign:'center',color:'White !important',fontWeight:'500'}}>${value}K<br/><Typography sx={{fontWeight:'400',color:'white !important'}}>Estimate Grand Total</Typography></Typography>;
       }     
       const iOSBoxShadow =
   '0 3px 1px rgba(0,0,0,0.1),0 4px 8px rgba(0,0,0,0.13),0 0 0 1px rgba(0,0,0,0.02)';
  
     return (
-    <Grid container sx={{pl:'4rem',pr:'4rem'}}>
+    <Grid container sx={{pl:'4rem',pr:'4rem', pb:'4rem'}}>
         <Grid item xs={12}>
         <IOSSlider
         aria-label="ios slider"

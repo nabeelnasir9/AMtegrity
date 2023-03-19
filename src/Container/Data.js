@@ -11,7 +11,7 @@ import AboutImage6 from '../images/AboutImage6.jpg';
 const Data = [
     {
       text1:
-        'mpartialTags that highlight General Scope Notes, Mitigation Activities, Moisture Readings, Personal Property Activities, Repair Activities, and Open Items.',
+        'AMntegrityTags that highlight General Scope Notes, Mitigation Activities, Moisture Readings, Personal Property Activities, Repair Activities, and Open Items.',
       
       image: AboutImage1,
      
@@ -19,7 +19,7 @@ const Data = [
   
     {
       text1:
-        'mpartialTags PDF Reports that help Carriers remain compliant with long-term record retention requirements (7-10 years) mandated by law.',
+        'AMntegrityTags PDF Reports that help Carriers remain compliant with long-term record retention requirements (7-10 years) mandated by law.',
      
       image: AboutImage2,
      
@@ -34,7 +34,7 @@ const Data = [
     },
     {
         text1:
-          'The ability to upload JPEG, PNG, ESX, SKX, and PDF documents into any mpartialTag - creating space for all the necessary data and supporting documents for a large loss to be embedded within a single mpartialMbed link.',
+          'The ability to upload JPEG, PNG, ESX, SKX, and PDF documents into any AMntegrityTag - creating space for all the necessary data and supporting documents for a large loss to be embedded within a single AMntegrityMbed link.',
         
         image: AboutImage4,
         
@@ -49,7 +49,7 @@ const Data = [
         
       },{
         text1:
-          'The mpartialMbed also incorporates the ability to document unique claim info and project details to include: Policy Type, Loss Type, Category, Class Job ID, and Claim Number.',
+          'The AMntegrityMbed also incorporates the ability to document unique claim info and project details to include: Policy Type, Loss Type, Category, Class Job ID, and Claim Number.',
         
         image: AboutImage6,
         

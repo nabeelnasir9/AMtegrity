@@ -1,0 +1,116 @@
+.Services__wrapper{
+    padding-top: 5rem;
+}
+.Services__Header{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    color:#4267B2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.Services__Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+}
+.Services__Content{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    grid-row: 30px;
+}
+
+.Services__Text_1{
+    font-size: 30px;
+    color:#4267B2;
+    font-family: 'raleway', sans-serif !important;
+    font-weight: 600;
+    text-align: left;
+}
+
+.Services__Text_2{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'raleway', sans-serif !important;
+    text-align: justify;
+    padding-left: 2rem;
+    padding-right: 6rem;
+    width:60%;
+    margin: auto;
+    color: grey;
+}
+.card {
+    height: 354px;
+    width: 250px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 1em;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    ;
+   }
+   
+    /*Image*/
+   .card-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: #4267B2;
+    background: linear-gradient(to bottom, #4267B2, #0e1f41);
+    border-radius: 10px;
+    
+    padding-top: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.4rem;
+   }
+   .card-image > p{
+    font-size: 11px;
+    padding-top: 0.3rem;
+    color: rgb(193, 193, 193);
+    font-family: 'raleway', sans-serif;
+   }
+   
+   /*Description */
+   .card-description {
+    display: flex;
+    position: absolute;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    height: 70%;
+    bottom: 0;
+    border-radius: 1em 1em 0 0;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.4em;
+    font-weight: 700;
+    font-family: 'raleway';
+    color:#4267B2;
+   }
+   
+   .text-body {
+    font-size: 13px;
+    line-height: 150%;
+    font-family: 'raleway';
+    color: grey;
+    font-weight: 600;
+   }
+   
+   
+   /* Hover states */
+   
+   .card:hover .card-description {
+    transform: translateY(100%);
+   }
+   
+   

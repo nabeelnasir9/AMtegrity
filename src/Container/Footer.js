@@ -5,23 +5,29 @@ import FooterElement from './FooterElement';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { ImLinkedin } from 'react-icons/im';
 
-import { FiFacebook } from 'react-icons/fi';
+import { FiFacebook, FiMail } from 'react-icons/fi';
 import { useLocation } from 'react-router';
+import {ImLocation} from 'react-icons/im';
+import {BsTelephone, BsTelephoneFill} from 'react-icons/bs';
+import {HiMail} from 'react-icons/hi';
+import '../Styles/Footer.css';
+// import {Link} from 'react-router-dom';
 
 
 function Footer(props) {
   const location = useLocation();
   console.log(location.pathname=='/Signin',location.pathname)
 
-    return (<>
-       { (location.pathname!='/forgotpassword' && location.pathname!='/signup') && <Grid container sx={{ backgroundColor: '#305eba', padding: '20px 0' }}>
+    return (
+        <>
+       { (location.pathname!='/forgotpassword' && location.pathname!='/signup') && <Grid container sx={{ backgroundColor: '#4267B2', padding: '20px 0', zIndex:'99' }}>
             <Grid item xs={12} sx={{pl:'4rem',pr:'4rem'}}>
-                <Grid container sx={{ backgroundColor: '#305eba', padding: '20px 0' }}>
+                <Grid container sx={{ backgroundColor: '#4267B2', padding: '20px 0' }}>
                     <Grid item xs={3} sx={{fontSize:"30px", color:"white", fontFamily:"Raleway", fontWeight:"700"}}>
-                        AMintegrity
+                        AMntegrity
                     </Grid>
                     <Grid item xs={3.5}>
-                    <FooterElement txt='About Us'/>
+                   <FooterElement txt='About Us'/>
                     <FooterElement txt='Partners'/>
                       
                         <FooterElement txt='Media Kit'/>
@@ -30,14 +36,39 @@ function Footer(props) {
                     <FooterElement  txt='Pricing' style={{fontWeight:'600'}}/>
                     <FooterElement  txt='Terms and Conditions'/>
                     </Grid>
-                    <Grid item xs={2} sx={{display:'flex',alignItems:'flex-end'}}>
-                        <img width={'100%'} src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDIuOTI1IiBoZWlnaHQ9IjU0LjQzNiIgdmlld0JveD0iMCAwIDIwMi45MjUgNTQuNDM2Ij4gPGcgaWQ9ImxvZ29fd2hpdGVfdG0iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zLjY4IC02LjkxKSIgb3BhY2l0eT0iMC41Ij4gPGcgaWQ9Ikdyb3VwXzE0MDEiIGRhdGEtbmFtZT0iR3JvdXAgMTQwMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTk5LjYzNSAxMy4wMjQpIj4gPHBhdGggaWQ9IlBhdGhfMTIwNCIgZGF0YS1uYW1lPSJQYXRoIDEyMDQiIGQ9Ik0yMjAuNSwxNC4xNjd2My4yODloLS42MlYxNC4xNjdIMjE4Ljc0VjEzLjYyaDIuOTA3di41NDdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjE4Ljc0IC0xMy42MikiIGZpbGw9IiNmNWY1ZjQiLz4gPHBhdGggaWQ9IlBhdGhfMTIwNSIgZGF0YS1uYW1lPSJQYXRoIDEyMDUiIGQ9Ik0yMjUuNDM1LDE0LjUyMmgtLjAyN2wtLjMuNjItLjgzOCwxLjUzMS0uODM4LTEuNTMxLS4zLS42MkgyMjMuMXYyLjkzNGgtLjU5MlYxMy42MmguNzM4bDEuMDMsMS45NWguMDM2bDEuMDMtMS45NWguN3YzLjgzNmgtLjU5MlYxNC41MjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjE5LjA3NSAtMTMuNjIpIiBmaWxsPSIjZjVmNWY0Ii8+IDwvZz4gPGcgaWQ9Ikdyb3VwXzE0MDMiIGRhdGEtbmFtZT0iR3JvdXAgMTQwMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDcuMjcgMTMuMDI0KSI+IDxnIGlkPSJHcm91cF8xNDAyIiBkYXRhLW5hbWU9Ikdyb3VwIDE0MDIiPiA8cGF0aCBpZD0iUGF0aF8xMjA2IiBkYXRhLW5hbWU9IlBhdGggMTIwNiIgZD0iTTU2LjIxMiwzNC4yMDlWMjYuMTcybC0uMjE5LTQuNjM4LjE2NC0uMDM2LDEuODc3LDQuMTM3LDQuMzkyLDguMDczLDQuMzkyLTguMDczTDY4LjY4NiwyMS41bC4xNjQuMDM2LS4yMTksNC42Mzh2OC4wMzZoNC42OTJWMTQuNEg2OC4wM0w2Mi40NTQsMjUuMTI0SDYyLjM5TDU2LjgxNCwxNC40SDUxLjUyVjM0LjIwOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MS41MiAtMTMuNjg5KSIgZmlsbD0iI2Y1ZjVmNCIvPiA8cGF0aCBpZD0iUGF0aF8xMjA3IiBkYXRhLW5hbWU9IlBhdGggMTIwNyIgZD0iTTIwOC4wNywyOS4xMTljMCwzLjI4LDEuNzY4LDUuMDExLDUuMTEyLDUuMDExaDIuODg4VjMwLjA3NmgtMy4xNDNWMjEuNDI5aDMuNDA4VjE3LjQ1NmgtMy43ODFWMTMuNjJoLTQuNDc0djE1LjVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjUuNDI3IC0xMy42MikiIGZpbGw9IiNmNWY1ZjQiLz4gPHBhdGggaWQ9IlBhdGhfMTIwOCIgZGF0YS1uYW1lPSJQYXRoIDEyMDgiIGQ9Ik0yMDUuNjQsMTcuODNoLS43OTNhNC41LDQuNSwwLDAsMC00LjQ1NiwzLjEyNWgtLjE2NFYxNy44M0gxOTUuMzhWMzQuNTEzaDQuODQ3VjI1LjAxOWEyLjgxNiwyLjgxNiwwLDAsMSwuODQ3LTIuMTIzYy44MTEtLjc4NCwyLjU0Mi0xLjAxMSw0LjU2NS0xLjAxMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02NC4zIC0xMy45OTQpIiBmaWxsPSIjZjVmNWY0Ii8+IDxwYXRoIGlkPSJQYXRoXzEyMDkiIGRhdGEtbmFtZT0iUGF0aCAxMjA5IiBkPSJNMTUzLjAxLDE3LjgzaC0uNzkzYTQuNSw0LjUsMCwwLDAtNC40NTYsMy4xMjVIMTQ3LjZWMTcuODNIMTQyLjc1VjM0LjUxM0gxNDcuNlYyNS4wMTlhMi44MTYsMi44MTYsMCwwLDEsLjg0Ny0yLjEyM2MuODExLS43ODQsMi41NDItMS4wMTEsNC41NjUtMS4wMTFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTkuNjI1IC0xMy45OTQpIiBmaWxsPSIjZjVmNWY0Ii8+IDxwYXRoIGlkPSJQYXRoXzEyMTAiIGRhdGEtbmFtZT0iUGF0aCAxMjEwIiBkPSJNMTIyLjg2LDI2LjM3NGMwLTUuNDQsMi44ODgtOC45ODQsOC4wNjQtOC45ODQsNS43LDAsOCw0LjEyOCw4LDguNzg0djEuNDRIMTI3Ljg4MXYuMTY0YzAsMS45MzIsMS4wMzksMy4yOCwzLjgsMy4yOGE1LjQ0LDUuNDQsMCwwLDAsNC4yMjgtMi4wNjhsMi40MjQsMy4wMTZhOS4zMyw5LjMzLDAsMCwxLTcuMjA3LDIuODUyQzEyNS44MzksMzQuODY2LDEyMi44NiwzMS44NzcsMTIyLjg2LDI2LjM3NFptNS4wMTEtMS44Njh2LjI2NEgxMzMuOXYtLjI5MmMwLTIuMS0uOTQ4LTMuNTA4LTIuODg4LTMuNTA4UzEyNy44NzEsMjIuMzc0LDEyNy44NzEsMjQuNTA2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU3Ljg1OCAtMTMuOTU1KSIgZmlsbD0iI2Y1ZjVmNCIvPiA8cGF0aCBpZD0iUGF0aF8xMjExIiBkYXRhLW5hbWU9IlBhdGggMTIxMSIgZD0iTTE3NS40MiwyNi4zNzRjMC01LjU0LDMuMDE2LTguOTg0LDguMDY0LTguOTg0czguMDY0LDMuNDQ0LDguMDY0LDguOTg0LTMuMDE2LDguNDkyLTguMDY0LDguNDkyUzE3NS40MiwzMS45MTQsMTc1LjQyLDI2LjM3NFptMTEuMDgsMS4yNDh2LTIuOThjMC0yLjE1OS0xLjExMi0zLjQwOC0zLjAxNi0zLjQwOHMtMy4wMTYsMS4yNDgtMy4wMTYsMy40MDh2Mi45OGMwLDIuMTU5LDEuMTEyLDMuNDA4LDMuMDE2LDMuNDA4UzE4Ni41LDI5Ljc4MiwxODYuNSwyNy42MjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjIuNTI3IC0xMy45NTUpIiBmaWxsPSIjZjVmNWY0Ii8+IDxwYXRoIGlkPSJQYXRoXzEyMTIiIGRhdGEtbmFtZT0iUGF0aCAxMjEyIiBkPSJNMTE3LjEsMTMuNjJoLTQuMzU1djJjMCwxLjE4NS0uMzkyLDEuODMxLTEuNywxLjgzMUgxMDkuODNWMjEuNDJoMi40MjR2Ny42OWMwLDMuMjgsMS43NjgsNS4wMTEsNS4xMTIsNS4wMTFoMi44ODhWMzAuMDY2SDExNy4xMVYyMS40MmgzLjQwOFYxNy40NDdIMTE3LjExVjEzLjYyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU2LjcgLTEzLjYyKSIgZmlsbD0iI2Y1ZjVmNCIvPiA8cGF0aCBpZD0iUGF0aF8xMjEzIiBkYXRhLW5hbWU9IlBhdGggMTIxMyIgZD0iTTEwMy44NDEsMTMuNjJIOTkuNDg2djJjMCwxLjE4NS0uMzkyLDEuODMxLTEuNywxLjgzMUg5Ni41N1YyMS40MmgyLjQyNHY3LjY5YzAsMy4yOCwxLjc2OCw1LjAxMSw1LjExMiw1LjAxMWgyLjg3OVYzMC4wNjZoLTMuMTQ0VjIxLjQyaDMuNDA4VjE3LjQ0N2gtMy40MDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTUuNTIyIC0xMy42MikiIGZpbGw9IiNmNWY1ZjQiLz4gPHBhdGggaWQ9IlBhdGhfMTIxNCIgZGF0YS1uYW1lPSJQYXRoIDEyMTQiIGQ9Ik0xNjUuMzQxLDE3LjM5YTQuNjU0LDQuNjU0LDAsMCwwLTQuNjIsMy4yOGgtLjE2NFYxNy43ODJIMTU1LjcxdjIxLjdoNC44NDd2LTcuOWguMTY0YTQuNyw0LjcsMCwwLDAsNC42MiwzLjI4YzQuMzU1LDAsNi42MjQtMi42NTEsNi42MjQtOC40OTJTMTY5LjcwNSwxNy4zOSwxNjUuMzQxLDE3LjM5Wm0xLjU3NiwxMC41YzAsMi4xNTktMS4zNDgsMy4wNTItMy4xOCwzLjA1MnMtMy4xOC0uOTQ4LTMuMTgtMi41MjRWMjMuODU5YzAtMS41NzYsMS4zNDktMi41MjQsMy4xOC0yLjUyNHMzLjE4LDEuNDEyLDMuMTgsMy41NzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjAuNzc2IC0xMy45NTUpIiBmaWxsPSIjZjVmNWY0Ii8+IDxwYXRoIGlkPSJQYXRoXzEyMTUiIGRhdGEtbmFtZT0iUGF0aCAxMjE1IiBkPSJNOTEuODY4LDM0LjQ3NGEzLjI4MywzLjI4MywwLDAsMS0zLjI4LTMuMDE2aC0uMmMtLjUyOCwyLjIzMi0yLjQyNCwzLjQwOC01LjA0OCwzLjQwOEM3OS45LDM0Ljg2Niw3OCwzMi44MzQsNzgsMjkuODU1YzAtMy42MzYsMi44MTUtNS4zNzYsNy4zNzEtNS4zNzZIODguMXYtLjU1NmMwLTEuNjY3LS44Mi0yLjcyNC0yLjg1Mi0yLjcyNGE0LjIzNyw0LjIzNywwLDAsMC0zLjcsMi4wMzJsLTIuODg4LTIuNTZjMS4zNzYtMi4wMzIsMy4zNDQtMy4yOCw2Ljk1Mi0zLjI4LDQuODQ3LDAsNy4zNDQsMi4yMzIsNy4zNDQsNi4zdjYuNzI0aDEuNnY0LjA1NUg5MS44NjhaTTg4LjEsMjkuMjYyVjI3LjIzMWgtMi4zNmMtMS44NjgsMC0yLjg1Mi42OTItMi44NTIsMS45MzJ2LjQ5MmMwLDEuMjQ4LjgyLDEuODMxLDIuMjYsMS44MzFDODYuNzQ3LDMxLjQ4Niw4OC4xLDMwLjgzLDg4LjEsMjkuMjYyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUzLjg3MiAtMTMuOTU1KSIgZmlsbD0iI2Y1ZjVmNCIvPiA8L2c+IDwvZz4gPGcgaWQ9Ikdyb3VwXzE0MDYiIGRhdGEtbmFtZT0iR3JvdXAgMTQwNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMy42OCA2LjkxKSI+IDxwYXRoIGlkPSJQYXRoXzEyMTYiIGRhdGEtbmFtZT0iUGF0aCAxMjE2IiBkPSJNMzEuNzA3LDYuOTEsMjAuMDI2LDEwLjE4MSw4LjM1NCw2LjkxLDMuNjgsOC4yMjJWMzguMzQ1bDQuNjc0LDEuMzEyLDExLjY4MS0zLjI3MSwxMS42ODEsMy4yNzEsNC42NzQtMS4zMTJWOC4yMjJaTTI3LjAzMywyOS4zODhsLTcuMDA3LTEuOTU5LTcuMDA3LDEuOTU5VjE3LjE3OWw3LjAwNywxLjk1OSw3LjAwNy0xLjk1OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zLjY4IC02LjkxKSIgZmlsbD0iI2I3YmFiYiIvPiA8ZyBpZD0iR3JvdXBfMTQwNCIgZGF0YS1uYW1lPSJHcm91cCAxNDA0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDEuMzEyKSI+IDxwYXRoIGlkPSJQYXRoXzEyMTciIGRhdGEtbmFtZT0iUGF0aCAxMjE3IiBkPSJNMjAuMDI2LDEyLjkyNHY2LjM0Mkw4LjM1NCwxNS45OTVWMzkuNzc2bC00LjY3NC0xLjNWOC4zNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zLjY4IC04LjM1KSIgZmlsbD0iI2ZmZiIvPiA8cGF0aCBpZD0iUGF0aF8xMjE4IiBkYXRhLW5hbWU9IlBhdGggMTIxOCIgZD0iTTI4LjYyNywzMi44NzcsMjEuNjIsMzAuOTA5VjM3LjI1TDMzLjMsNDAuNTIxVjE2Ljc0bC00LjY3NCwxLjMxMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01LjI3NCAtOS4wOTUpIiBmaWxsPSIjZmZmIi8+IDwvZz4gPGcgaWQ9Ikdyb3VwXzE0MDUiIGRhdGEtbmFtZT0iR3JvdXAgMTQwNSI+IDxwYXRoIGlkPSJQYXRoXzEyMTkiIGRhdGEtbmFtZT0iUGF0aCAxMjE5IiBkPSJNMzEuNzA3LDYuOTFsNC42NjUsMS4zMTJMMjAuMDI2LDEyLjgsMy42OCw4LjIyMiw4LjM1NCw2LjkxbDExLjY3MiwzLjI3MVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zLjY4IC02LjkxKSIgZmlsbD0iIzk5OSIvPiA8cGF0aCBpZD0iUGF0aF8xMjIwIiBkYXRhLW5hbWU9IlBhdGggMTIyMCIgZD0iTTIwLjkzNywyOS40Mmw3LjAwNywxLjk2OFYzNGwtNy4wMDctMS45NjhMMTMuOTMsMzRWMzEuMzg4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQuNTkxIC04LjkxKSIgZmlsbD0iIzk5OSIvPiA8L2c+IDwvZz4gPGcgaWQ9Ikdyb3VwXzQ5MDYiIGRhdGEtbmFtZT0iR3JvdXAgNDkwNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAxLjY5OSA0Mi44NjgpIj4gPHBhdGggaWQ9IlBhdGhfNjI2OSIgZGF0YS1uYW1lPSJQYXRoIDYyNjkiIGQ9Ik0xNDQuNjM0LDUxLjE2aC0yLjd2My4wNzhoMi43YTEuMjk0LDEuMjk0LDAsMCwwLC45LS4zLDEuMSwxLjEsMCwwLDAsLjMzMi0uODY3di0uNzQ4YTEuMSwxLjEsMCwwLDAtLjMzMi0uODY3QTEuMjk0LDEuMjk0LDAsMCwwLDE0NC42MzQsNTEuMTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTA3LjU1MSAtNDUuNTkpIiBmaWxsPSIjZjVmNWY0Ii8+IDxwYXRoIGlkPSJQYXRoXzYyNzAiIGRhdGEtbmFtZT0iUGF0aCA2MjcwIiBkPSJNMTI3LjI4MSw1MS4yOGwtMS4zLDQuNDgxaDIuN2wtMS4zMTgtNC40ODFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTA1LjE2NCAtNDUuNjA4KSIgZmlsbD0iI2Y1ZjVmNCIvPiA8cGF0aCBpZD0iUGF0aF82MjcxIiBkYXRhLW5hbWU9IlBhdGggNjI3MSIgZD0iTTExMy4wMTQsNTEuMTZoLTIuN3YzLjA3OGgyLjdhMS4yOTQsMS4yOTQsMCwwLDAsLjktLjMsMS4xLDEuMSwwLDAsMCwuMzMyLS44Njd2LS43NDhhMS4xLDEuMSwwLDAsMC0uMzMyLS44NjdBMS4zMDksMS4zMDksMCwwLDAsMTEzLjAxNCw1MS4xNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDIuODE5IC00NS41OSkiIGZpbGw9IiNmNWY1ZjQiLz4gPHBhdGggaWQ9IlBhdGhfNjI3MiIgZGF0YS1uYW1lPSJQYXRoIDYyNzIiIGQ9Ik0xMDEuNSw0NC42MVY2My4wODhoOTkuMDgxVjQ0LjYxWm0xMy44MjYsOC42NDhhMy40MzYsMy40MzYsMCwwLDEtLjcxNCwxLjE4MiwzLjQ4MywzLjQ4MywwLDAsMS0xLjEyMi43NzQsMy43NzUsMy43NzUsMCwwLDEtMS40ODguMjgxaC0zLjAxdjQuMjZoLTIuNTY4di0xMS44SDExMmEzLjc3NSwzLjc3NSwwLDAsMSwxLjQ4OC4yODEsMy4yLDMuMiwwLDAsMSwxLjgzNywxLjk1Niw0Ljc0NSw0Ljc0NSwwLDAsMSwwLDMuMDdabTExLjE2NSw2LjUtLjg0Mi0yLjgwNmgtMy45MzdsLS44NDIsMi44MDZoLTIuNmwzLjg4Ni0xMS44aDMuMThsMy44MzUsMTEuOFptMTMuMjkxLDAtMi4wNjYtNC4zMjhIMTM1Ljg3djQuMzI4SDEzMy4zdi0xMS44aDUuNmEzLjg3NSwzLjg3NSwwLDAsMSwxLjQ3MS4yNzIsMy4wNjYsMy4wNjYsMCwwLDEsMS4xMjIuNzY1LDMuNDIzLDMuNDIzLDAsMCwxLC43MTQsMS4xOSw0LjQyOCw0LjQyOCwwLDAsMSwuMjU1LDEuNTM5LDQuMDQsNC4wNCwwLDAsMS0uNTM2LDIuMSwzLjA3LDMuMDcsMCwwLDEtMS42MTYsMS4zbDIuMzEzLDQuNjM0Wm0xNS42LTkuNTI0aC0zLjJ2OS41MjRoLTIuNTY4VjUwLjIzMWgtMy4yVjQ3Ljk1Mmg4Ljk2MlptMTMuODUyLDkuNTI0aC0yLjgwNmwtMy4yMzEtNS41NzgtMS4xMzEtMi4zNjRoLS4wNTF2Ny45NTFoLTIuNDE1VjQ3Ljk1MkgxNjIuNGwzLjIzMSw1LjU3OCwxLjEzMSwyLjM2NGguMDUxVjQ3Ljk0M2gyLjQxNVptMTMuMTQ2LTkuNTI0aC01LjQ1OXYyLjRIMTgxLjZ2Mi4yNzloLTQuNjg1djIuNTUxaDUuNDU5djIuMjc5aC04LjAzNlY0Ny45NTJoOC4wMzZabTExLjI3NSw5LjUyNC0yLjA2Ni00LjMyOGgtMS44NDV2NC4zMjhoLTIuNTY4di0xMS44aDUuNmEzLjg3NSwzLjg3NSwwLDAsMSwxLjQ3MS4yNzIsMy4wNjYsMy4wNjYsMCwwLDEsMS4xMjIuNzY1LDMuNDI0LDMuNDI0LDAsMCwxLC43MTQsMS4xOSw0LjQyNyw0LjQyNywwLDAsMSwuMjU1LDEuNTM5LDQuMDQsNC4wNCwwLDAsMS0uNTM2LDIuMSwzLjA3LDMuMDcsMCwwLDEtMS42MTYsMS4zbDIuMzEzLDQuNjM0WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwMS41IC00NC42MSkiIGZpbGw9IiNmNWY1ZjQiLz4gPHBhdGggaWQ9IlBhdGhfNjI3MyIgZGF0YS1uYW1lPSJQYXRoIDYyNzMiIGQ9Ik0yMDcuOTg0LDUxLjE2aC0yLjd2My4wNzhoMi43YTEuMjk0LDEuMjk0LDAsMCwwLC45LS4zLDEuMSwxLjEsMCwwLDAsLjMzMi0uODY3di0uNzQ4YTEuMSwxLjEsMCwwLDAtLjMzMi0uODY3QTEuMzA5LDEuMzA5LDAsMCwwLDIwNy45ODQsNTEuMTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTE3LjAzMyAtNDUuNTkpIiBmaWxsPSIjZjVmNWY0Ii8+IDwvZz4gPC9nPiA8L3N2Zz4g'/>
+                    <Grid item xs={2} sx={{display:'flex',alignItems:'flex-start'}}>
+                        <div className='Footer__container__1'>
+                            <div className='Footer__Elements__1'>
+                                <div className='Footer__icons__1'>
+                                <ImLocation/>
+
+                                </div>
+                                <div className='Footer__Text__1'>2710 Hunter Mill Road, Oakton, VA 22124</div>
+                                </div>
+                                <div className='Footer__Elements__1'>
+                                <div className='Footer__icons__1'>
+                                <BsTelephoneFill/>
+
+                                </div>
+                                <div className='Footer__Text__1'>571-520-9119</div>
+                                </div>
+                                <div className='Footer__Elements__1'>
+                                <div className='Footer__icons__1'>
+                                <HiMail/>
+
+                                </div>
+                                <div className='Footer__Text__1'>info@amtegrity.com</div>
+                                </div>
+                            
+                        </div>
+                    
                     </Grid>
+                   
                 </Grid>
             </Grid>
             <Grid item xs={12} sx={{borderTop:'1px solid white'}}>
                 <Grid container sx={{justifyContent:'space-between',pl:'4rem',pr:'4rem',pt:'1rem'}}>
-                    <Grid item ><Typography sx={{fontsize:'14px',color:'white'}}>2023 © AMintegrity. All rights reserved.</Typography></Grid>
+                    <Grid item ><Typography sx={{fontsize:'14px',color:'white'}}>2023 © AMntegrity. All rights reserved.| Developed by CODSEED.</Typography></Grid>
                     <Grid item sx={{gap:'15px',display:"flex"}} >
 
                         <Link sx={{ textDecoration: 'none', color: 'white',fontSize:'14px' }}><FiFacebook fontSize={'16px'}/></Link>
