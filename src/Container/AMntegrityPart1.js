@@ -12,7 +12,7 @@ import {RiListCheck2} from 'react-icons/ri';
 // Get precise Scans and estimates in no time with Xactimate - the ultimate solution for accurate construction estimates!
 const Scopes = () => {
   return (
-    <div>
+    <div style={{backgroundColor:'#E7E7E7',width:'100%'}}>
     <div className="GridScope">
       <div className="GridContainer">
         <div className="Scope_Main">

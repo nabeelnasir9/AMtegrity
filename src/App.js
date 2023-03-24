@@ -27,7 +27,18 @@ import Services from "./Container/Services";
 const theme=createTheme({
   typography:{
   fontFamily:  'Raleway'
-  }
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lgr:1000,
+      lg: 1200,
+      
+      xl: 1536,
+    },
+  },
 })
 
 function App() {
