@@ -57,3 +57,13 @@ font-size: 28px;
     padding-bottom: 3rem;
     line-height: 1.5rem;
 }
+@media screen and (max-width:920px) and (min-width:600px) {
+.AMntegrityPart3__wrapper{
+    overflow: hidden;
+}
+.AMntegrityPart3__Text_4{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+}

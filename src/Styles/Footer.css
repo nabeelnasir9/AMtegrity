@@ -19,3 +19,7 @@
     font-weight: 500 !important;
     font-family: 'Raleway', sans-serif;
 }
+
+@media screen and (max-width:920px) and (min-width:600px) {
+.Footer__Text__1{ font-size: 11px;}
+}

@@ -23,7 +23,7 @@ function Footer(props) {
        { (location.pathname!='/forgotpassword' && location.pathname!='/signup') && <Grid container sx={{ backgroundColor: '#4267B2', padding: '20px 0', zIndex:'99' }}>
             <Grid item xs={12} sx={{pl:'4rem',pr:'4rem'}}>
                 <Grid container sx={{ backgroundColor: '#4267B2', padding: '20px 0' }}>
-                    <Grid item xs={3} sx={{fontSize:"30px", color:"white", fontFamily:"Raleway", fontWeight:"700"}}>
+                    <Grid item xs={3} sx={{fontSize:{lg:"30px",xs:'20px'}, color:"white", fontFamily:"Raleway", fontWeight:"700"}}>
                         AMntegrity
                     </Grid>
                     <Grid item xs={3.5}>
@@ -68,7 +68,7 @@ function Footer(props) {
             </Grid>
             <Grid item xs={12} sx={{borderTop:'1px solid white'}}>
                 <Grid container sx={{justifyContent:'space-between',pl:'4rem',pr:'4rem',pt:'1rem'}}>
-                    <Grid item ><Typography sx={{fontsize:'14px',color:'white'}}>2023 © AMntegrity. All rights reserved.| Developed by CODSEED.</Typography></Grid>
+                    <Grid item ><Typography sx={{fontSize:{lg:'14px',xs:'12px'},color:'white'}}>2023 © AMntegrity. All rights reserved.| Developed by CODSEED.</Typography></Grid>
                     <Grid item sx={{gap:'15px',display:"flex"}} >
 
                         <Link sx={{ textDecoration: 'none', color: 'white',fontSize:'14px' }}><FiFacebook fontSize={'16px'}/></Link>

@@ -117,7 +117,7 @@ function Sliderbar(props) {
   '0 3px 1px rgba(0,0,0,0.1),0 4px 8px rgba(0,0,0,0.13),0 0 0 1px rgba(0,0,0,0.02)';
  
     return (
-    <Grid container sx={{pl:'4rem',pr:'4rem', pb:'4rem'}}>
+    <Grid container sx={{pl:'128px',pr:'84px', pb:'4rem'}}>
         <Grid item xs={12}>
         <IOSSlider
         aria-label="ios slider"

@@ -121,3 +121,22 @@ margin-bottom: 55px;
     display: flex;
     flex-direction: row;
 }
+@media screen and (max-width:1950px) and (min-width:1300px) {
+    .Scope_Main{
+        column-gap: 10rem;
+    }
+}
+@media screen and (min-width:600px) and (max-width:920px) {
+.headerContent{
+    font-size: 10px !important;
+}    
+.ScopeText1,.ScopeText2,.ScopeText3,.ScopeText4{
+    font-size: 22px;
+}
+.ScopeCard .MuiPaper-root.MuiCard-root{
+    width:380px
+}
+.headerContent2{
+    font-size: 10px !important;
+}
+}

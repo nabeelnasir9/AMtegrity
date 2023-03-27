@@ -4,6 +4,7 @@
     padding-top: 7rem;
     padding-bottom: 7rem;
     background-color: rgb(248, 248, 248);
+    width: 100%;
     
 }
 
@@ -129,4 +130,10 @@ color: #4267B2;
     background-color:rgb(204, 204, 204);
     /* text-decoration: underline;
     color:rgb(184, 69, 28); */
+}
+@media screen and (max-width:920px) and (min-width:600px) {
+    .AMntegritybed__container{
+        flex-direction: column;
+    }
+    
 }

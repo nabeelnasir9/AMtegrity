@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 function PlanBox(props) {
     return (
-        <Grid item xs={4} sx={{ mb: '6rem' }} >
+        <Grid item xs={12} lg={4} sx={{ mb: '6rem' ,pl:{xs:'10rem',lg:0 },pr:{xs:'10rem',lg:0 }}} >
             <Grid sx={{ background:props.headingcolor, borderRadius: '8px' }}>
                 <Typography sx={{ color: 'white', fontSize: '28px', pt: '1rem', pb: '1rem', pl: '1.5rem' }}>{props.heading}</Typography>
             </Grid>

@@ -113,4 +113,10 @@
     transform: translateY(100%);
    }
    
-   
+   @media screen and (max-width:920px) and (min-width:600px) {
+    .Services__Container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-around;
+    }
+   }
