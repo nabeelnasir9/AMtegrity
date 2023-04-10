@@ -13,7 +13,7 @@ const [message, setmessage] = useState('')
  const submitHandler=async ()=>{
   console.log('red')
   
-  const response =await fetch('http://localhost:1337/api/message',{
+  const response =await fetch('https://backened-m-integrity-271pwlwa5-jasim-n.vercel.app/api/message',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({Name,Email,message,Phonenumber})
