@@ -14,7 +14,7 @@ function Header(props) {
         <Grid item  xs={0.3} lg={1.5}></Grid>
         <Grid item md={8.5} sm={9.5} xs={10} sx={{display:'flex',alignItems:"center",gap:'7px',cursor:'pointer',justifyContent:{lg:'end',xs:'flex-end'}, color:'#4267B2',pr:"1rem"}}>
             {datalist.map((s,n)=><HeaderElement sx={{color:'#4267B2' }} key={n} txt={s}/> )}
-            <Button href='/Signin' sx={{backgroundColor:'#4267B2',color:'white',fontFamily:'Raleway',fontSize:{xs:'9px',lgr:'10px',lg:'11px'},pl:'1rem',pr:'1rem',textTransform:'none',borderRadius:'1rem',textAlign:'center',':hover':{backgroundColor:'white',color:'#4267B2',border:'2px solid #4267B2',borderRadius:'1rem',fontWeight:'600' ,padding:'6px 16px'}}}>Sign In </Button>
+            <Button href='/Signin' sx={{backgroundColor:'#4267B2',border:'2px solid #4267B2',color:'white',fontFamily:'Raleway',fontSize:{xs:'9px',lgr:'10px',lg:'11px'},padding:'4px 8px',textTransform:'none',borderRadius:'1rem',textAlign:'center',':hover':{backgroundColor:'white',color:'#4267B2',border:'2px solid #4267B2',borderRadius:'1rem',fontWeight:'600' }}}>Sign In </Button>
             {/* <PopupButton href= sx={{backgroundColor:'#4267B2',color:'white',fontFamily:'Raleway',fontSize:'12px',pl:'1rem',pr:'1rem',textTransform:'none',borderRadius:'1rem',textAlign:'center',':hover':{backgroundColor:'#white',color:'#4267B2',border:'2px solid #4267B2',borderRadius:'1rem' }}}>Book a Call </PopupButton> */}
             <PopupButton
             className='PopupButton__1'
