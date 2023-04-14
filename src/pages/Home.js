@@ -18,6 +18,7 @@ import Slider from "../Container/Slider";
 import Sliderbar from "../Container/Sliderbar";
 import SignIn from "./SignIn";
 import Loader from '../Container/Jins';
+import AnimmatedConfirmer from "../components/AnimmatedConfirmer";
 // import LoadingSpinner from 'react-loading-spinner';
 
 function Home() {
