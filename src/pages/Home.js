@@ -39,7 +39,9 @@ function Home() {
   
   
       {/* <Header/> */}
+      
       <Scopes/>
+      
       <AMntegrityPart2/>
       <Sketchbox/>
       <AMntegrityPart3/>

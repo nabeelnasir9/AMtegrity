@@ -1,0 +1,49 @@
+.Banner__wrap {
+  background: linear-gradient(
+    90deg,
+    rgba(231, 201, 28, 1) 2%,
+    rgba(213, 110, 26, 1) 73%
+  );
+}
+
+.Banner__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.Banner__wrapper__outer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.Banner__wrapper__inner {
+  margin-left: 5.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-right: 3rem;
+}
+
+.Banner__button {
+  margin-left: 2.7rem;
+  background-color: black;
+  color: white !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.BannerButton {
+  color: aliceblue !important;
+  font-size: 1.1rem !important;
+}

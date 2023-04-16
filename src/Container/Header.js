@@ -1,14 +1,37 @@
 import { Button, Grid, Link } from '@mui/material';
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import HeaderElement from './HeaderElement';
 import { PopupButton } from 'react-calendly';
+import AMNT from "../images/AMN11.png";
+
 import '../Styles/HeaderButton.css';
 const datalist=[{name:'AMSketch',link:'/#AMntegrityMbed'},{name:'AMXactimate',link:'/#AMXactimate'},{name:'AMEstimate',link:'/#AMEstimate'},{name:'Services',link:'/Services'},{name:'About',link:'/aboutus'},{name:'Contact Us',link:'/#contactus'}]
 function Header(props) {
-    return (
-       <Grid container  sx={{alignItems:'center',pl:{xs:'0',lg:'4rem'},pr:{xs:'0',lg:'4rem'},pt:'.5rem',pb:'.5rem',background:{xs:'white'},boxShadow:' 0 0 6px rgb(0 0 0 / 30%)',position:'fixed',zIndex:"999"}}>
-        <Grid item xs={2} sx={{cursor:'pointer', fontSize:{xs:'20px',lg:"27px"}, color:"#4267B2",pl:{xs:'2rem',lg:"4rem"}}}>
+  const [scrollPosition, setScrollPosition] = useState(0);
 
+  useEffect(() => {
+    function handleScroll() {
+      setScrollPosition(window.scrollY);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  },);
+
+  const headerStyles = {
+    backgroundColor: scrollPosition > 550 ? "white" : "transparent",
+    color: scrollPosition > 550 ? "black" : "white",
+   
+  };
+    return (
+       <Grid container  style={headerStyles} sx={{alignItems:'center',pl:{xs:'0',lg:'4rem'},pr:{xs:'0',lg:'4rem'},pt:'.5rem',pb:'.5rem',background:{xs:'white'},boxShadow:' 0 0 6px rgb(0 0 0 / 30%)',position:'fixed',zIndex:"999",transition:'0.7s all ease-in-out'}}>
+        <Grid item xs={2} sx={{cursor:'pointer',display:'flex', flexDirection:'row', fontSize:{xs:'20px',lg:"27px"}, color:"#4267B2",pl:{xs:'2rem',lg:"4rem"}}}>
+        <Link href="/" sx={{ height: "20px", width: "30px", marginTop: "3px" }}>
+          <img src={AMNT} alt="" style={{ height: "30px", width: "30px" }} />
+        </Link>
           <Link href='/' sx={{textDecoration:'none', color:'#4267B2'}}>AMntegrity</Link> 
         </Grid>
         <Grid item  xs={0.3} lg={1.5}></Grid>

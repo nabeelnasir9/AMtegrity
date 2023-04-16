@@ -1,0 +1,100 @@
+.Image__Words {
+  position: relative;
+  top: -30rem;
+  margin-left: 5rem;
+  overflow: hidden;
+}
+
+.Image__Words__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* .Image__Image__1{
+    position: absolute;
+} */
+
+.Image__Words__1 {
+  font-size: 2rem;
+  
+}
+
+.Image__Words__2 {
+  font-size: 0.9rem;
+}
+.Image__Words_3 {
+  margin-top: 2rem;
+}
+
+.Image__Button_1 {
+  background:linear-gradient( 90deg, #000 0%, #1976d2 100% ) !important;
+  font-size: 1.3rem !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  color: white !important;
+  font-weight: 400 !important;
+  border: transparent !important;
+  border-radius: 30px !important;
+}
+
+/* App.css */
+
+.video-container {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.9s ease-in-out; /* Define the transition duration and timing function */
+}
+
+.image-container {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.9s ease-in-out; /* Define the transition duration and timing function */
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.Construction__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-right: 5rem;
+    margin-left: 8.5rem;
+    text-align: justify;
+    margin-bottom: 5rem;
+  
+}
+
+.Construction__header{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 2rem;
+    color:rgba(66, 103, 178, 1);
+    font-weight:700;
+    font-family: 'Raleway',sans-serif;
+}
+
+.Construction__para{
+    margin-bottom: 0.8rem;
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.2rem;
+}
+
+.Bold__{
+    font-weight: 700;
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.2rem;
+}

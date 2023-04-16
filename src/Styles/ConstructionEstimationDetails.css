@@ -1,0 +1,115 @@
+.card_Constainer {
+    color: #4267B2;
+    width: 236px;
+    height: 400px;
+    position: relative;
+    outline: 6px solid #4267B2;
+    border-radius: 8px;
+    line-height: 150%;
+    padding: 16px;
+    background: white;
+    background-blend-mode: multiply;
+    /* background: linear-gradient(to top, #7bc3ec ,#4267B2, #4267B2 ); */
+    transition: background-color 1s ease-in-out;
+    overflow: hidden;
+    font-family: 'Raleway',sans-serif;
+  }
+  
+  .card-front {
+    bottom: 30px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  }
+  
+  .card-back {
+    transform: translateX(120%);
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    text-align: start;
+  }
+  
+  
+  /*Text*/
+  .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Raleway',sans-serif;
+  }
+  /*Text divider*/
+  .title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    border-radius: 50%;
+    height: 2px;
+    margin: 2px auto;
+    background-color: white;
+  }
+  
+  
+  /*Hover*/
+  .card_Constainer:hover {
+    background-color: white;
+  }
+  
+  .card_Constainer:hover .card-front {
+    transform: translateX(-100%);
+  }
+  
+  .card_Constainer:hover .card-back {
+    transform: translateX(0);
+  }
+  
+  
+  .ConstructionEstimationDetails__Wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+flex-wrap: wrap;
+margin-left: 8.5rem;
+margin-top: 5rem;
+margin-bottom: 7rem;
+
+}
+
+.ConstructionEstimationDetails__container{
+margin-right: 6rem;
+margin-bottom: 4rem;
+}
+
+.parallax {
+  /* Add desired styles for the parallax element */
+  /* For example: */
+  height: 900px; /* Set the height of the parallax element */
+  background-image: url('../images/Estimate.jpg'); /* Set the background image for the parallax element */
+  background-size: cover; /* Set the background size to cover the entire element */
+  background-position: center; /* Set the background position to center */
+  transform: translateY(0); /* Set the initial transform value */
+  transition: transform 0.3s ease-out; /* Add a smooth transition for the parallax effect */
+}
+
+.subtitle {
+    margin-bottom: 4rem;
+  
+}
+
+.ConstructionEstimationDetails__Wrapper_1{
+    text-align: center;
+    margin-top: 12rem;
+}
+
+.ConstructionEstimationDetails__Wrapper_2{
+    font-size: 40px;
+    color: #4267B2;
+    font-weight: 700;
+    font-family: 'Raleway',sans-serif;
+}
+
+.ConstructionEstimationDetails__Wrapper_3{
+    font-size: 22px;
+    font-family: 'Raleway',sans-serif;
+    color: #4267B2;
+    font-weight: 600;
+}

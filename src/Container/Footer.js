@@ -27,7 +27,9 @@ function Footer(props) {
                         AMntegrity
                     </Grid>
                     <Grid item xs={3.5}>
-                   <FooterElement txt='About Us'/>
+                 
+                   <FooterElement txt='About Us' to='/Services'/>
+                 
                     <FooterElement txt='Partners'/>
                       
                         <FooterElement txt='Media Kit'/>

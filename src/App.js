@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -21,6 +21,8 @@ import Footer from "./Container/Footer";
 import Forgotpassword from "./pages/Forgotpassword";
 import Signup from "./pages/Signup";
 import Services from "./Container/Services";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 // import {Audio} from 'react-loading-spinner';
 // import LoadingSpinner from 'react-loading-spinner';
 
@@ -44,7 +46,9 @@ const theme=createTheme({
 function App() {
   
   // console.log(location);
-
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
    
     <>
@@ -58,7 +62,7 @@ function App() {
   wrapperClass
 /> */}
     <ThemeProvider theme={theme}>
-    <Grid container>
+    <Grid container >
       <Header/>
       <Router>
     
