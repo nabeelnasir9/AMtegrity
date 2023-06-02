@@ -88,7 +88,7 @@ function Forgotpassword(props) {
           <Grid item xs={12}  sx={{mt:'1rem'}}>
             <Grid container sx={{alignItems:"center"}}>
 <Grid item xs={4} sx={{height:'1px',background:'#00000080'}}></Grid>
-<Grid item xs={4} sx={{background:'white'}}><Typography sx={{fontSize:'14px',color:'#00000080',textAlign:'center'}}>New to AMntegrity?</Typography></Grid>
+<Grid item xs={4} sx={{background:'white'}}><Typography sx={{fontSize:'14px',color:'#00000080',textAlign:'center'}}>New to AMtegrity?</Typography></Grid>
 <Grid item xs={4} sx={{height:'1px',background:'#00000080'}}></Grid>
 
             </Grid>

@@ -9,17 +9,17 @@ function AboutUs() {
     <div className='AboutUs__childWrapper'>
         <div className='AboutUS__MainContainer'>
             <div className='AboutUS__Header'>
-                About AMntegrity
+                About AMtegrity
             </div>
             <div className='About__MainPara'>
-            AMntegrity is purpose-built for the property insurance ecosystem. AMntegrity exists to extract maximum value from the tectonic shift towards leveraging geospatial data in both risk engineering, and machine-assisted claim settlement.
+            AMtegrity is purpose-built for the property insurance ecosystem. AMtegrity exists to extract maximum value from the tectonic shift towards leveraging geospatial data in both risk engineering, and machine-assisted claim settlement.
 
             </div>
             <div className='AboutUs__Mainpara_1'>
-            AMntegrity believes that both Claims Professionals & Contractors deserve to have access to a platform designed to enhance communication, and address the unique demands of our industry.
+            AMtegrity believes that both Claims Professionals & Contractors deserve to have access to a platform designed to enhance communication, and address the unique demands of our industry.
             </div>
             <div className='AboutUs__Mainpara_2'>
-            AMntegrity currently incorporates three main offerings:
+            AMtegrity currently incorporates three main offerings:
             </div>
             <div className='AboutUS__Mainpara_points'>
                 <ul>

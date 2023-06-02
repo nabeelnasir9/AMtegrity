@@ -26,7 +26,7 @@ function AMntegrityPart3() {
           </div>
         </div>
         <div className="AMntegrityPart3__Text_4">
-        The AMntegrity fee structure is based on a percentage of the total RCV of the estimate (pre Overhead and Profit).
+        The AMtegrity fee structure is based on a percentage of the total RCV of the estimate (pre Overhead and Profit).
 Drag the slider around based on what you think it will cost to repair the property.
 Move forward based on the estimated fee structure below.
             </div>

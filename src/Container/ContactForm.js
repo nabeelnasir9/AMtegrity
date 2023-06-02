@@ -199,7 +199,9 @@ const validatePhoneNumberRegex = /^[0-9]*$/;
           label="Message"
         />
       </Grid>
-      <Grid item><Button type='submit' >send</Button></Grid>
+      <Grid item sx={{
+        border: '2px solid #4267B2', paddingTop:'1px', paddingBottom:'1px', paddingLeft:'10px', paddingRight:'10px', background:'#4267B2', borderRadius:'15px'
+      }}><Button sx={{color:'white'}}type='submit' >send</Button></Grid>
     </Grid>
     </form>
   );

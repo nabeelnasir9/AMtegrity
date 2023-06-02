@@ -12,7 +12,7 @@ function Slider(props) {
     const [currentSlide, setCurrentSlide] = useState(0);
     return (
       <Grid container sx={{pl:'4rem',pr:'4rem', pb:"6rem", pt:"2rem"}}>
-        <Grid item xs={12}><Typography sx={{textAlign:'center',fontWeight:'600',fontSize:"28px",mb:'1.5rem'}}>Immaculate. IAMntegrity. [ESX]</Typography></Grid>
+        <Grid item xs={12}><Typography sx={{textAlign:'center',fontWeight:'600',fontSize:"28px",mb:'1.5rem'}}>Immaculate. IAMtegrity. [ESX]</Typography></Grid>
 <Grid item xs={12} sx={{pl:'10rem',pr:'10rem',position:'relative'}} >
 <div className="swiper-button-prev"><AiOutlineLeft/></div>
 <div className="swiper-button-next"><AiOutlineRight/></div>

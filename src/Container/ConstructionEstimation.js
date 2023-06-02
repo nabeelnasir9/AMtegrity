@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link, Button} from "@mui/material";
 import '../Styles/Construction.css';
-
+import ScrollTrigger from 'react-scroll-trigger';
+import '../Styles/myComponent.css';
 
 function ConstructionEstimation() {
+
+  const [animate, setAnimate] = useState(false);
+
+  const handleScrollEnter = () => {
+    setAnimate(true);
+  }
   return (
+    <>
+    <ScrollTrigger onEnter={handleScrollEnter}>
+    <div className={animate ? 'animated' : ''}>
     <div className="Banner__wrap">
      <div className="Banner__wrapper">
         <div className="Banner__wrapper__outer">
@@ -22,6 +32,9 @@ GET A QUOTE WITH 30% OFF
         </div>
      </div>
     </div>
+    </div>
+    </ScrollTrigger>
+    </>
   );
 }
 

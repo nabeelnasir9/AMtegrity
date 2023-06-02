@@ -21,7 +21,7 @@ function Feebtn(props) {
 
             </Grid>
             <Grid item xs={12}>
-                <Typography sx={{textAlign:'center', pb:"6rem", fontWeight:"500",pl:{xs:'2rem',lg:0},pr:{xs:'2rem',lg:0}}}>The AMntegrity fee structure is based on a percentage of the total RCV of the estimate (pre Overhead and Profit).<br/>
+                <Typography sx={{textAlign:'center', pb:"6rem", fontWeight:"500",pl:{xs:'2rem',lg:0},pr:{xs:'2rem',lg:0}}}>The AMtegrity fee structure is based on a percentage of the total RCV of the estimate (pre Overhead and Profit).<br/>
 Drag the slider around based on what you think it will cost to repair the property.<br/>
 Move forward based on the estimated fee structure below.</Typography>
             </Grid>

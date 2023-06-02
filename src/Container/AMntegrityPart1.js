@@ -90,7 +90,7 @@ const Scopes = () => {
                     <h1 style={{ color: "white" }}>BID MORE WIN MORE!</h1>
                   </div>
                   <div className="Image__Words__2">
-                    <h1 style={{ color: '#1976d2' }}>
+                    <h1 style={{ color: 'white' }}>
                       Material Takeoff & Construction Estimating Services
                     </h1>
                   </div>

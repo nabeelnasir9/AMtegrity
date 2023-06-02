@@ -32,7 +32,7 @@ function Header(props) {
         <Link href="/" sx={{ height: "20px", width: "30px", marginTop: "3px" }}>
           <img src={AMNT} alt="" style={{ height: "30px", width: "30px" }} />
         </Link>
-          <Link href='/' sx={{textDecoration:'none', color:'#4267B2'}}>AMntegrity</Link> 
+          <Link href='/' sx={{textDecoration:'none', color:'#4267B2'}}>AMtegrity</Link> 
         </Grid>
         <Grid item  xs={0.3} lg={1.5}></Grid>
         <Grid item md={8.5} sm={9.5} xs={10} sx={{display:'flex',alignItems:"center",gap:'7px',cursor:'pointer',justifyContent:{lg:'end',xs:'flex-end'}, color:'#4267B2',pr:"1rem"}}>

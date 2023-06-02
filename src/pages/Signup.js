@@ -609,7 +609,7 @@ function Signup(props) {
   onClick={()=>{setTerm((prev)=>!prev)}}
   sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }}
 />
-<Typography>I've read and accept the AMntegrity Terms&Conditions</Typography>
+<Typography>I've read and accept the AMtegrity Terms&Conditions</Typography>
 </Grid>
 }
             <Grid item xs={12} sx={{ textAlign: "center", mt: "1.5rem" }}>

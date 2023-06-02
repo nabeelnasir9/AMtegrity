@@ -74,7 +74,7 @@ setTimeout(()=>{refers.current.focus();},10000)
         <Typography
           sx={{ textAlign: "center", fontSize: "45px", fontWeight: "600" }}
         >
-          Sign In with your AMntegrity account.
+          Sign In with your AMtegrity account.
         </Typography>
       </Grid>
       <Grid item xs={5}>
@@ -304,7 +304,7 @@ background:'#e8f0fe',borderRadius:'9px',
                     textAlign: "center",
                   }}
                 >
-                  New to AMntegrity?
+                  New to AMtegrity?
                 </Typography>
               </Grid>
               <Grid
