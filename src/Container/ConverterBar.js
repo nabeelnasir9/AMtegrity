@@ -36,7 +36,7 @@ function ConverterBar(props) {
           }}
         />
       </Grid>
-      <Grid item xs={.5}>
+      {/* <Grid item xs={.5}>
         {' '}
         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSI+IDxkZWZzPiA8ZmlsdGVyIGlkPSJFbGxpcHNlXzE2MiIgeD0iMCIgeT0iMCIgd2lkdGg9IjQ1IiBoZWlnaHQ9IjQ1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiPiA8ZmVPZmZzZXQgZHk9IjMiIGlucHV0PSJTb3VyY2VBbHBoYSIvPiA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIzIiByZXN1bHQ9ImJsdXIiLz4gPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMC4wNzgiLz4gPGZlQ29tcG9zaXRlIG9wZXJhdG9yPSJpbiIgaW4yPSJibHVyIi8+IDxmZUNvbXBvc2l0ZSBpbj0iU291cmNlR3JhcGhpYyIvPiA8L2ZpbHRlcj4gPC9kZWZzPiA8ZyBpZD0iR3JvdXBfNTAxMiIgZGF0YS1uYW1lPSJHcm91cCA1MDEyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTEyMiAtNjkxNCkiPiA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAxMTIyLCA2OTE0KSIgZmlsdGVyPSJ1cmwoI0VsbGlwc2VfMTYyKSI+IDxjaXJjbGUgaWQ9IkVsbGlwc2VfMTYyLTIiIGRhdGEtbmFtZT0iRWxsaXBzZSAxNjIiIGN4PSIxMy41IiBjeT0iMTMuNSIgcj0iMTMuNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOSA2KSIgZmlsbD0iI2ZmZiIvPiA8L2c+IDx0ZXh0IGlkPSJfIiBkYXRhLW5hbWU9Ij0iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMzkgNjk0MSkiIGZpbGw9IiMzYWMyODAiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtZmFtaWx5PSJHaWxyb3ktU2VtaWJvbGQsIEdpbHJveSIgZm9udC13ZWlnaHQ9IjYwMCI+PHRzcGFuIHg9IjAiIHk9IjAiPj08L3RzcGFuPjwvdGV4dD4gPC9nPiA8L3N2Zz4g" />
       </Grid>
@@ -45,7 +45,7 @@ function ConverterBar(props) {
         <Typography><span>$</span>0</Typography>
       </Grid>
       <Grid item xs={.5}><FcInfo style={{fontSize:'30px',marginLeft:'5px'}}/></Grid>
-      <Grid item xs={12} sx={{mt:'4rem'}} ><Typography sx={{fontSize:'16px',textAlign:'center'}}>The calculator fees are based on the Free Plan. For Enterprise Plan fees please<Link to="/SignIn"> <span style={{Color:'#4267B2'}}>Contact Us</span></Link></Typography></Grid>
+      <Grid item xs={12} sx={{mt:'4rem'}} ><Typography sx={{fontSize:'16px',textAlign:'center'}}>The calculator fees are based on the Free Plan. For Enterprise Plan fees please<Link to="/SignIn"> <span style={{Color:'#4267B2'}}>Contact Us</span></Link></Typography></Grid> */}
 
     </Grid> 
   );

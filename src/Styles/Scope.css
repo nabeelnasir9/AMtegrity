@@ -1,142 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap");
 
-.GridScope{
-    width:98.7vw;
-    background-color: rgb(231, 231, 231);
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-    padding-left: 10rem;
-    padding-top:4rem ;
-    
-}
-
-.GridContainer{
-        /* margin: 4% !important; */
-        margin-top: 40px !important;
-        margin-bottom: 40px !important;
-}
-.Scope_Main{
-    display: flex;
-    flex-direction: row;
-    /* margin:10%; */
-   
-    width:100%;
-   
-}
-.ScopePart1{
-
-display:flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-bottom: 55px;
-
+.GridScope {
+  width: 98.7vw;
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  padding-left: 10rem;
+  padding-top: 4rem;
 }
 
-.ScopeTexts{
-    display:flex;
-    flex-direction: column;
-    /* margin-right: 30px; */
-    margin-left: -30px;
+.GridContainer {
+  /* margin: 4% !important; */
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+.Scope_Main {
+  display: flex;
+  flex-direction: row;
+  /* margin:10%; */
+
+  width: 100%;
+}
+.ScopePart1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
 }
 
-.ScopeText1{
-    display: flex;
-    justify-content: flex-start;
-    font-family: 'Raleway',sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-
-}
-.ScopeText2{
-    display: flex;
-    justify-content: flex-start;
-    font-family: 'Raleway',sans-serif;
-    font-size: 30px;
-    color:#4267B2;
-    font-weight: 700;
-}
-.ScopeText3{
-    display: flex;
-    justify-content: flex-start;
-    font-family: 'Raleway',sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-}
-.ScopeText4{
-    display: flex;
-    justify-content: flex-start;
-    font-family: 'Raleway',sans-serif;
-    font-size: 30px;
-    color:#4267B2;
-    font-weight: 700;
+.ScopeTexts {
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 30px; */
+  margin-left: -30px;
 }
 
-.ScopeCard{
-    padding-left: 35px;
+.ScopeText1 {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.ScopeText2 {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  color: #4267b2;
+  font-weight: 700;
+}
+.ScopeText3 {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.ScopeText4 {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  color: #4267b2;
+  font-weight: 700;
 }
 
-.headerContent{
-    font-size: 20px !important;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700 !important;
-    color: #4267B2 !important;
-
-
-
+.ScopeCard {
+  padding-left: 35px;
 }
 
-.headerContent2{
-    font-size: 13px !important;
-    
-    font-family: 'Raleway', sans-serif !important;
-    font-weight: 600 !important;
-    color: black !important;
+.headerContent {
+  font-size: 20px !important;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700 !important;
+  color: #4267b2 !important;
 }
 
-.CardContents{
-    padding-bottom: 14px !important;
-    
-}
-.CardContentss{
-    padding-bottom: 23px !important;
-   
-}
-.CardContentsss{
-    padding-bottom: 12px !important;
-    
+.headerContent2 {
+  font-size: 13px !important;
+
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 600 !important;
+  color: black !important;
 }
 
-.CardIcon{
-    font-size: 42px;
-    color:#4267B2;
-    padding-top: 44px;
-    padding-bottom: 10px;
-    padding-left: 11px;
-    padding-right: 2px;
+.CardContents {
+  padding-bottom: 14px !important;
+}
+.CardContentss {
+  padding-bottom: 23px !important;
+}
+.CardContentsss {
+  padding-bottom: 12px !important;
+}
 
+.CardIcon {
+  font-size: 42px;
+  color: #4267b2;
+  padding-top: 44px;
+  padding-bottom: 10px;
+  padding-left: 11px;
+  padding-right: 2px;
 }
-.CardMainSection{
-    display: flex;
-    flex-direction: row;
+.CardMainSection {
+  display: flex;
+  flex-direction: row;
 }
-@media screen and (max-width:1950px) and (min-width:1300px) {
-    .Scope_Main{
-        column-gap: 10rem;
-    }
+@media screen and (max-width: 1950px) and (min-width: 1300px) {
+  .Scope_Main {
+    column-gap: 10rem;
+  }
 }
-@media screen and (min-width:600px) and (max-width:920px) {
-.headerContent{
+@media screen and (min-width: 600px) and (max-width: 920px) {
+  .headerContent {
     font-size: 10px !important;
-}    
-.ScopeText1,.ScopeText2,.ScopeText3,.ScopeText4{
+  }
+  .ScopeText1,
+  .ScopeText2,
+  .ScopeText3,
+  .ScopeText4 {
     font-size: 22px;
-}
-.ScopeCard .MuiPaper-root.MuiCard-root{
-    width:380px
-}
-.headerContent2{
+  }
+  .ScopeCard .MuiPaper-root.MuiCard-root {
+    width: 380px;
+  }
+  .headerContent2 {
     font-size: 10px !important;
+  }
 }
+
+.Image-button-1 {
+  background-color: #4267b2 !important;
+  border-radius: 20px !important;
+  font-weight: 700 !important;
+}
+.Image-button-2 {
+  background-color: white !important;
+  border-radius: 20px !important;
+  border: 2px solid #4267b2 !important;
+  color: #4267b2 !important;
+  font-weight: 700 !important;
 }

@@ -10,11 +10,8 @@ import "../Styles/Swiper.css";
 import estimate from "../images/Estimation.jpg";
 import "../Styles/PictureMain.css";
 import { Button, Link } from "@mui/material";
-import '../Styles/ConstructionEstimationDetails.css';
-
-// import CardActions from '@mui/material/CardActions';
+import "../Styles/ConstructionEstimationDetails.css";
 import CardContent from "@mui/material/CardContent";
-// import Button from '@mui/material/Button';
 import Typography from "@mui/material/Typography";
 import { FiCopy } from "react-icons/fi";
 import { TbArrowsRightLeft } from "react-icons/tb";
@@ -22,11 +19,125 @@ import { RiListCheck2 } from "react-icons/ri";
 import Homepage from "../images/homepage.mp4";
 import ConstructionEstimation from "./ConstructionEstimation";
 import ConstructionEstimationDetails from "./ConstructionEstimationDetails";
+import ImagePlan from "../images/image-plan.jpg";
+import styled from "styled-components";
 
-// Get precise Scans and estimates in no time with Xactimate - the ultimate solution for accurate construction estimates!
+const ModalOverlay = styled.div`
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+`;
+
+const ModalContainer = styled.div`
+  background-color: #4267b2 !important;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    label {
+      font-weight: bold;
+      color: white;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      outline: none;
+      width: 100%;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .file-input-label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .file-name {
+      font-size: 14px;
+      color: white;
+    }
+
+    button[type="submit"] {
+      padding: 8px 16px;
+      background-color: #4267b2;
+      color: white;
+      border: 1px solid white;
+      border-radius: 4px;
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+`;
+
+const CloseButton = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+`;
+const InputContainer = styled.div`
+  position: relative;
+  width: 100%;
+`;
+
+const InputSelector = styled.select`
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+`;
+
+const InputField = styled.input`
+  width: 100%;
+  padding: 10px;
+  padding-left: 40px; /* Adjust this value based on the selector width */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+`;
+
 const Scopes = () => {
   const [currentTime, setCurrentTime] = useState(0);
   const [showVideo, setShowVideo] = useState(true); // State to track if video should be shown or not
+  const [showForm, setShowForm] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [pdf, setPdf] = useState(null);
+  const [selectedOption, setSelectedOption] = useState("");
+  const [inputValue, setInputValue] = useState("");
 
   function handleTimeUpdate(event) {
     setCurrentTime(event.target.currentTime);
@@ -58,9 +169,181 @@ const Scopes = () => {
       clearInterval(intervalId); // Clear the interval on component unmount
     };
   }, []);
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // Perform form submission logic here
+    // e.g., send form data to server, send email, etc.
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("PDF:", pdf);
+    // Reset form fields
+    setName("");
+    setEmail("");
+    setPdf(null);
+    // Hide the form
+    setShowForm(false);
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setPdf(file);
+  };
+
+  const toggleFormVisibility = () => {
+    setShowForm(!showForm);
+  };
+  const handleOptionChange = (e) => {
+    setSelectedOption(e.target.value);
+  };
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
   return (
     <div>
-      <div className={`video-container ${showVideo ? "show" : "hide"}`}>
+      <div style={{ position: "relative", display: "inline-block" }}>
+        <img
+          src={ImagePlan}
+          alt=""
+          loading="lazy"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+            opacity: "0.3",
+          }}
+        />
+        <div className="Image__Words">
+          <div className="Image__Words__wrapper">
+            <div className="Image__Words__1">
+              <h1 style={{ color: "#4267b2 " }}>BID MORE WIN MORE!</h1>
+            </div>
+            <div className="Image__Words__2">
+              <h1 style={{ color: "#4267b2 " }}>
+                Material Takeoff & Construction Estimating Services
+              </h1>
+            </div>
+            <div style={{ color: "#4267b2", marginTop: "20px" }}>
+              <h2 style={{ textTransform: "capitalize" }}>
+                Getting tired of spreadsheets? Experience more accurate and
+                efficient estimating and budgeting.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            top: "70%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            display: "flex",
+            flexDirection: "row",
+          }}
+        >
+          <Button
+            onClick={toggleFormVisibility}
+            className="Image-button-1"
+            variant="contained"
+            sx={{
+              marginRight: "80px",
+              width: { lg: "300px", xs: "100px" },
+              height: { lg: "60px", xs: "60px" },
+            }}
+          >
+              {showForm ? "Hide Form" : "Get Your Estimate"}
+          </Button>
+
+          <Button
+            href="/#contactus"
+            className="Image-button-2"
+            variant="contained"
+            sx={{
+              marginRight: "0px",
+              width: { lg: "300px", xs: "100px" },
+              height: { lg: "60px", xs: "60px" },
+            }}
+          >
+             Contact Us
+          </Button>
+          <div>
+            <div>
+              {showForm && (
+                <ModalOverlay>
+                  <ModalContainer>
+                    <CloseButton onClick={toggleFormVisibility}>X</CloseButton>
+                    <form onSubmit={handleFormSubmit}>
+                      <label>
+                        Name:
+                        <input
+                          type="text"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                          placeholder="Enter Your Name"
+                        />
+                      </label>
+                      <label>
+                        Email:
+                        <input
+                          type="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          placeholder="name@example.com"
+                        />
+                      </label>
+                      <label>
+                        Scope:
+                        <input
+                          type="text"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                          placeholder="Scope Of Your Work"
+                        />
+                      </label>
+                      <InputContainer>
+                        <label htmlFor="name">What Best Describe You?</label>
+                        <InputSelector
+                          value={selectedOption}
+                          onChange={handleOptionChange}
+                        >
+                          <option value="">Select an option</option>
+                          <option value="Contractor">Contractor</option>
+                          <option value="Sub-Contractor">Sub Contractor</option>
+                          <option value="Home-Builder">Home Builder</option>
+                          <option value="Architecture">Architecture</option>
+                          <option value="Others">Others</option>
+                        </InputSelector>
+
+                        {/* <InputField
+                        id="name"
+                          type="text"
+                          value={inputValue}
+                          onChange={handleInputChange}
+                          placeholder="Scope Of Your Work"
+                        /> */}
+                      </InputContainer>
+                      <label>
+                        Upload PDF:
+                        <label className="file-input-label">
+                          <input type="file" onChange={handleFileChange} />
+                          <span className="file-name">
+                            {pdf ? pdf.name : "Choose a file"}
+                          </span>
+                        </label>
+                      </label>
+                      <button type="submit">Submit</button>
+                    </form>
+                  </ModalContainer>
+                </ModalOverlay>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className={`video-container ${showVideo ? "show" : "hide"}`}>
         {showVideo && (
           <video
             style={{ width: "100%", marginBottom: "-1rem" }}
@@ -106,7 +389,7 @@ const Scopes = () => {
             </div>
            </div>
         )} 
-      </div>
+      </div> */}
       <div>
         <div className="Construction__wrapper">
           <div className="Construction__wrapper__inner">
@@ -114,55 +397,53 @@ const Scopes = () => {
               CONSTRUCTION ESTIMATING SERVICES
             </div>
             <div className="Construction__para">
-              <span className="Bold__"> " </span> At World Estimating, we offer
-              our construction estimating services and material takeoffs. We
-              have been around in the construction industry for 15 long years
-              through that we have developed a vast team of{" "}
-              <span className="Bold__">construction estimators.</span> This way,
-              we have a proven track record of delivering accurate material
-              estimates to our valuable clients. Thus, our portfolio includes
-              services for every construction trade. Further, we do all this in
-              the fastest turnaround time.
+              <span className="Bold__"> " </span> AMtegrity is a construction
+              estimation company committed to providing exceptional services and
+              accurate material takeoffs. With over 15 years of experience in
+              the industry, our dedicated team of construction estimators has
+              built a strong reputation for delivering precise estimates to our
+              esteemed clients. We take pride in catering to a wide range of
+              construction trades, ensuring that our portfolio covers
+              residential, commercial, and industrial projects.
             </div>
             <div className="Construction__para">
-              In the same manner, our construction managers and quantity
-              surveyors have vast expertise in providing successful estimates.
-              Thus, they provide accurate estimates for{" "}
-              <span className="Bold__">
-                residential, commercial, and industrial projects.
-              </span>{" "}
-              While they prepare, they follow the strict guidelines of the
-              certified American Estimators Organization & American Association
-              of Cost Engineers (AACE).
+              Our construction managers and quantity surveyors possess extensive
+              expertise, allowing them to consistently deliver successful
+              estimates. They adhere to the strict guidelines set forth by the
+              esteemed organizations, such as the American Estimators
+              Organization and the American Association of Cost Engineers
+              (AACE). By following these industry standards, we guarantee that
+              our clients receive the highest level of professionalism and
+              accuracy in our services.
             </div>
             <div className="Construction__para">
-              This ensures the right practices of tools and software for
-              providing the right services to our clients. Also,{" "}
-              <span className="Bold__">
-                we are proficient with Planswift, Bluebeam, Trimble, RS Means,
-                Cost Works, Xactimate, FastPIPE, FastDUCT, and Quest Estimating.
-              </span>{" "}
-              Further, for zip-code-based pricing, we use RS means, Craftsmen,
-              and our developed databases.
+              At AMtegrity, we leverage cutting-edge tools and software,
+              including Planswift, Bluebeam, Trimble, RS Means, Cost Works,
+              Xactimate, FastPIPE, FastDUCT, and Quest Estimating. Our
+              proficiency with these industry-leading technologies enables us to
+              provide comprehensive and precise estimates. Moreover, we utilize
+              RS Means, Craftsmen, and our proprietary databases for
+              zip-code-based pricing, ensuring that our clients receive the most
+              relevant and accurate cost assessments.
             </div>
             <div className="Construction__para">
-              Without any doubt, Word Estimating is a competitive platform among
-              other construction estimation companies. Here you get quality
-              construction estimates at affordable rates under one roof. We
-              stand among the top estimators on The Blue Book.{" "}
+              We take pride in our position as a leading competitor in the
+              construction estimation industry. AMtegrity offers top-quality
+              construction estimates at affordable rates, all under one roof.
+              Our commitment to excellence has earned us recognition as one of
+              the top estimators on The Blue Book, further establishing our
+              dedication to providing unmatched services to our valued clients.{" "}
               <span className="Bold__">"</span>
             </div>
           </div>
         </div>
       </div>
       <div>
-    
-    {/* Content for parallax element 1 */}
+        {/* Content for parallax element 1 */}
         <ConstructionEstimation />
-     
       </div>
       <div>
-      <ConstructionEstimationDetails/>
+        <ConstructionEstimationDetails />
       </div>
       <div style={{ backgroundColor: "#E7E7E7", width: "100%" }}>
         <div className="GridScope">

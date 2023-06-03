@@ -19,6 +19,7 @@ import Sliderbar from "../Container/Sliderbar";
 import SignIn from "./SignIn";
 import Loader from '../Container/Jins';
 import AnimmatedConfirmer from "../components/AnimmatedConfirmer";
+import MyComponent from "../Container/MyComponent";
 // import LoadingSpinner from 'react-loading-spinner';
 
 function Home() {
@@ -41,19 +42,19 @@ function Home() {
       {/* <Header/> */}
       
       <Scopes/>
-      
       <AMntegrityPart2/>
       <Sketchbox/>
       <AMntegrityPart3/>
-      <ConverterBar/>
-<Sliderbar/>
+      {/* <ConverterBar/> */}
+{/* <Sliderbar/> */}
       <Scope/>
       <ScopeWork/>
       <Feebtn/>
       <PlanBoxContainer/>
       <Grid item xs={12} sx={{backgroundColor:'#f2f6f7',pb:'2rem'}} >
       <Examplecontainer/>
-      <Slider/>
+
+      {/* <Slider/> */}
       
       </Grid>
       <ContactForm/>
