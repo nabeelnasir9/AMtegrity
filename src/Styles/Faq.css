@@ -1,0 +1,30 @@
+.questions{
+    margin-top: 5rem;
+    width: 100%;
+}
+.questions-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.questions-qhead-primary{
+    display: flex;
+    justify-content: center;
+    color: #4267B2;
+    font-size: 42px;
+}
+
+.questions-qhead-secondary{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.questions__ques{
+    color: #4267B2;
+}
+
+.questions__ques_bold{
+    display: flex;
+    justify-content: space-between;
+}

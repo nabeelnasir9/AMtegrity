@@ -1,7 +1,7 @@
 .Image__Words {
   position: relative;
   top: -30rem;
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
   overflow: hidden;
 }
 

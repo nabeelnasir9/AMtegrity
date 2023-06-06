@@ -21,13 +21,17 @@ import ConstructionEstimation from "./ConstructionEstimation";
 import ConstructionEstimationDetails from "./ConstructionEstimationDetails";
 import ImagePlan from "../images/image-plan.jpg";
 import styled from "styled-components";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 const ModalOverlay = styled.div`
   position: fixed;
-  top: -100%;
+  // top: -100%;
   left: 0;
+  bottom: 0%;
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   background-color: lightgray;
   display: flex;
   justify-content: center;
@@ -138,6 +142,10 @@ const Scopes = () => {
   const [pdf, setPdf] = useState(null);
   const [selectedOption, setSelectedOption] = useState("");
   const [inputValue, setInputValue] = useState("");
+  const [isVibrating, setIsVibrating] = useState(false);
+  useEffect(()=>{
+    Aos.init({duration: 1400});
+      },[]);
 
   function handleTimeUpdate(event) {
     setCurrentTime(event.target.currentTime);
@@ -170,6 +178,21 @@ const Scopes = () => {
     };
   }, []);
 
+  
+
+  const handleButtonClick = () => {
+    if ("vibrate" in navigator) {
+      setIsVibrating(!isVibrating);
+      if (!isVibrating) {
+        navigator.vibrate([200, 100, 200, 100, 200]); // Vibrate pattern
+      } else {
+        navigator.vibrate(0); // Stop vibration
+      }
+    } else {
+      console.log("Vibration API is not supported.");
+    }
+  };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     // Perform form submission logic here
@@ -191,7 +214,12 @@ const Scopes = () => {
   };
 
   const toggleFormVisibility = () => {
+    if (navigator.vibrate) {
+      // Vibrate for 200 milliseconds
+      navigator.vibrate(200);
+    }
     setShowForm(!showForm);
+    setIsVibrating(!isVibrating);
   };
   const handleOptionChange = (e) => {
     setSelectedOption(e.target.value);
@@ -202,12 +230,12 @@ const Scopes = () => {
   };
 
   return (
-    <div>
+    <div data-aos="fade-up">
       <div style={{ position: "relative", display: "inline-block" }}>
         <img
           src={ImagePlan}
           alt=""
-          loading="lazy"
+          // loading="lazy"
           style={{
             width: "100%",
             height: "100%",
@@ -218,17 +246,19 @@ const Scopes = () => {
         <div className="Image__Words">
           <div className="Image__Words__wrapper">
             <div className="Image__Words__1">
-              <h1 style={{ color: "#4267b2 " }}>BID MORE WIN MORE!</h1>
+              <h1 style={{ color: "#4267b2 " }}>
+                Winning Bids <span style={{color:'black'}}>through</span> Strategic Brilliance. !
+              </h1>
             </div>
-            <div className="Image__Words__2">
+            {/* <div className="Image__Words__2">
               <h1 style={{ color: "#4267b2 " }}>
                 Material Takeoff & Construction Estimating Services
               </h1>
-            </div>
-            <div style={{ color: "#4267b2", marginTop: "20px" }}>
+            </div> */}
+            <div style={{ color: "#4267b2" }}>
               <h2 style={{ textTransform: "capitalize" }}>
-                Getting tired of spreadsheets? Experience more accurate and
-                efficient estimating and budgeting.
+                <span style={{color:'black'}}>Get Reliable</span> Cost Estimation Services and Accurate Material
+                Takeoffs
               </h2>
             </div>
           </div>
@@ -236,7 +266,7 @@ const Scopes = () => {
         <div
           style={{
             position: "absolute",
-            top: "70%",
+            top: "66%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             display: "flex",
@@ -265,6 +295,7 @@ const Scopes = () => {
               width: { lg: "300px", xs: "100px" },
               height: { lg: "60px", xs: "60px" },
             }}
+            onClick={handleButtonClick}
           >
              Contact Us
           </Button>
@@ -315,17 +346,9 @@ const Scopes = () => {
                           <option value="Architecture">Architecture</option>
                           <option value="Others">Others</option>
                         </InputSelector>
-
-                        {/* <InputField
-                        id="name"
-                          type="text"
-                          value={inputValue}
-                          onChange={handleInputChange}
-                          placeholder="Scope Of Your Work"
-                        /> */}
                       </InputContainer>
                       <label>
-                        Upload PDF:
+                        Upload a Plan:
                         <label className="file-input-label">
                           <input type="file" onChange={handleFileChange} />
                           <span className="file-name">
@@ -390,7 +413,7 @@ const Scopes = () => {
            </div>
         )} 
       </div> */}
-      <div>
+      <div data-aos="fade-up">
         <div className="Construction__wrapper">
           <div className="Construction__wrapper__inner">
             <div className="Construction__header">
@@ -442,7 +465,7 @@ const Scopes = () => {
         {/* Content for parallax element 1 */}
         <ConstructionEstimation />
       </div>
-      <div>
+      <div data-aos="fade-up">
         <ConstructionEstimationDetails />
       </div>
       <div style={{ backgroundColor: "#E7E7E7", width: "100%" }}>
@@ -467,22 +490,7 @@ const Scopes = () => {
                 </div>
               </div>
               <div className="ScopeCard">
-                {/* <Swiper
-        direction={"vertical"}
-        pagination={{
-          clickable: true,
-        }}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
-        spaceBetween={1}
-        // centeredSlides={true}
-        
-        modules={[Pagination]}
-        className="mySwiper"
-      > */}
-                {/* <SwiperSlide> */}
+               
                 <Card
                   sx={{
                     width: 450,
@@ -510,7 +518,6 @@ const Scopes = () => {
                         color="text.secondary"
                         className="headerContent2"
                       >
-                        {/* 3D scanning platform that lets you create immersive virtual experiences with ease. Our technology captures every detail of your space, from floor plans to stunning 4K visuals, giving your audience an unparalleled sense of presence.  */}
                         The ultimate solution for converting your Matterport
                         scans into Xactimate Sketches. With our advanced
                         technology, you can quickly and easily transform your 3D
@@ -542,7 +549,6 @@ const Scopes = () => {
                         color="text.secondary"
                         className="headerContent2"
                       >
-                        {/* The ultimate solution for converting your Matterport scans into Xactimate Sketches. With our advanced technology, you can quickly and easily transform your 3D scans into detailed Xactimate sketches files. */}
                         The premier platform for accurate, efficient
                         construction estimating. With our advanced technology
                         and expert team, you can trust that your estimates will

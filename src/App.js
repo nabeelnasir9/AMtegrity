@@ -23,6 +23,7 @@ import Signup from "./pages/Signup";
 import Services from "./Container/Services";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import ContactBanner from "./Container/ContactBanner";
 // import {Audio} from 'react-loading-spinner';
 // import LoadingSpinner from 'react-loading-spinner';
 
@@ -78,6 +79,7 @@ function App() {
       <Route path='/Services' element={<Services/>} />
     
       </Routes>
+      <ContactBanner/>
       <Footer/>
       </Router>
       

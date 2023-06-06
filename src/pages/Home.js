@@ -20,6 +20,8 @@ import SignIn from "./SignIn";
 import Loader from '../Container/Jins';
 import AnimmatedConfirmer from "../components/AnimmatedConfirmer";
 import MyComponent from "../Container/MyComponent";
+import Questions from "../Container/Questions";
+import EstimateVideo from "../Container/EstimateVideo";
 // import LoadingSpinner from 'react-loading-spinner';
 
 function Home() {
@@ -52,10 +54,11 @@ function Home() {
       <Feebtn/>
       <PlanBoxContainer/>
       <Grid item xs={12} sx={{backgroundColor:'#f2f6f7',pb:'2rem'}} >
-      <Examplecontainer/>
+      {/* <Examplecontainer/> */}
+      <EstimateVideo/>
 
       {/* <Slider/> */}
-      
+      {/* <Questions/> */}
       </Grid>
       <ContactForm/>
       {/* <Footer/> */}
